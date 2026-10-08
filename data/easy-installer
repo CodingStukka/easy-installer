@@ -1,0 +1,19 @@
+#!/usr/bin/python3 -I
+"""Launcher of Easy Installer (installed as /usr/bin/easy-installer)."""
+
+import os
+import sys
+
+# Filled in by `make install` / `make install-user` when the package is not installed into
+# Python's own site-packages (the .deb leaves both empty).
+_LIBDIR = ""
+_LOCALEDIR = ""
+
+if _LIBDIR:
+    sys.path.insert(0, _LIBDIR)
+if _LOCALEDIR:
+    os.environ.setdefault("EASY_INSTALLER_LOCALEDIR", _LOCALEDIR)
+
+from easy_installer.__main__ import main  # noqa: E402
+
+sys.exit(main())

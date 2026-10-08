@@ -1,0 +1,23 @@
+#!/usr/bin/python3 -I
+"""Privileged helper of Easy Installer (installed as /usr/libexec/easy-installer/easy-installer-helper).
+
+Started only through pkexec; the polkit action com.roothirsch.EasyInstaller.manage points at this
+exact path. "-I" keeps PYTHONPATH, PYTHONHOME and user site-packages out of the root process.
+"""
+
+import os
+import sys
+
+# Filled in by `make install` when the package is not installed into Python's own
+# site-packages (the .deb leaves both empty). Must point to a root-owned directory.
+_LIBDIR = ""
+_LOCALEDIR = ""
+
+if _LIBDIR:
+    sys.path.insert(0, _LIBDIR)
+if _LOCALEDIR:
+    os.environ.setdefault("EASY_INSTALLER_LOCALEDIR", _LOCALEDIR)
+
+from easy_installer.helper.main import main  # noqa: E402
+
+sys.exit(main(sys.argv))

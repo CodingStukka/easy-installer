@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 roothirsch -->
+<component type="desktop-application">
+  <id>com.roothirsch.EasyInstaller</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <name>Easy Installer</name>
+
+  <summary>Install downloaded AppImage apps with one click</summary>
+  <summary xml:lang="de">Heruntergeladene AppImage-Apps mit einem Klick installieren</summary>
+  <summary xml:lang="nl">Gedownloade AppImage-apps met één klik installeren</summary>
+
+  <developer id="com.roothirsch">
+    <name>roothirsch</name>
+  </developer>
+
+  <description>
+    <p>
+      Easy Installer turns a downloaded AppImage file into an app that feels properly installed:
+      it gets its own icon, shows up in your app menu and search, and can be removed again with a
+      single click.
+    </p>
+    <p xml:lang="de">
+      Easy Installer macht aus einer heruntergeladenen AppImage-Datei eine App, die sich richtig
+      installiert anfühlt: mit eigenem Symbol, in deinem App-Menü und in der Suche – und mit einem
+      Klick wieder entfernbar.
+    </p>
+    <p xml:lang="nl">
+      Easy Installer maakt van een gedownload AppImage-bestand een app die echt geïnstalleerd
+      aanvoelt: met een eigen pictogram, in je app-menu en zoekfunctie, en met één klik weer te
+      verwijderen.
+    </p>
+    <p>
+      It is made for people who are new to Linux. Just double-click an AppImage or drop it onto
+      the window, and Easy Installer does the rest:
+    </p>
+    <p xml:lang="de">
+      Easy Installer ist für alle gemacht, die neu bei Linux sind. Einfach doppelt auf eine
+      AppImage-Datei klicken oder sie ins Fenster ziehen – den Rest erledigt Easy Installer:
+    </p>
+    <p xml:lang="nl">
+      Het is gemaakt voor mensen die nieuw zijn met Linux. Dubbelklik gewoon op een AppImage of
+      sleep het bestand naar het venster, en Easy Installer doet de rest:
+    </p>
+    <ul>
+      <li>Moves the app to a safe, permanent place</li>
+      <li xml:lang="de">Verschiebt die App an einen sicheren, festen Ort</li>
+      <li xml:lang="nl">Verplaatst de app naar een veilige, vaste plek</li>
+      <li>Uses the app's own name, icon and version</li>
+      <li xml:lang="de">Verwendet den Namen, das Symbol und die Version der App selbst</li>
+      <li xml:lang="nl">Gebruikt de eigen naam, het pictogram en de versie van de app</li>
+      <li>Adds the app to your app menu and search</li>
+      <li xml:lang="de">Fügt die App deinem App-Menü und der Suche hinzu</li>
+      <li xml:lang="nl">Voegt de app toe aan je app-menu en zoekfunctie</li>
+      <li>Installs apps just for you or for everyone on the computer</li>
+      <li xml:lang="de">Installiert Apps nur für dich oder für alle auf dem Computer</li>
+      <li xml:lang="nl">Installeert apps alleen voor jou of voor iedereen op de computer</li>
+      <li>Finds new versions of your apps and updates them with one click – the previous version is kept for a while, so you can go back</li>
+      <li xml:lang="de">Findet neue Versionen deiner Apps und aktualisiert sie mit einem Klick – die vorherige Version wird eine Weile aufbewahrt, damit du zurückkehren kannst</li>
+      <li xml:lang="nl">Vindt nieuwe versies van je apps en werkt ze met één klik bij – de vorige versie wordt een tijdje bewaard, zodat je terug kunt gaan</li>
+      <li>Also installs apps that come as an archive (.zip, .tar.gz, .tar.xz)</li>
+      <li xml:lang="de">Installiert auch Apps, die als Archiv kommen (.zip, .tar.gz, .tar.xz)</li>
+      <li xml:lang="nl">Installeert ook apps die als archief komen (.zip, .tar.gz, .tar.xz)</li>
+      <li>Removes apps cleanly; their settings and data go to the trash only if you want</li>
+      <li xml:lang="de">Entfernt Apps sauber; ihre Einstellungen und Daten landen nur im Papierkorb, wenn du das möchtest</li>
+      <li xml:lang="nl">Verwijdert apps netjes; hun instellingen en gegevens gaan alleen naar de prullenbak als je dat wilt</li>
+      <li>Shows where an app was downloaded from and whether its maker signed it</li>
+      <li xml:lang="de">Zeigt, woher eine App heruntergeladen wurde und ob ihr Hersteller sie signiert hat</li>
+      <li xml:lang="nl">Laat zien waar een app vandaan is gedownload en of de maker haar heeft ondertekend</li>
+    </ul>
+    <p>
+      Easy Installer never starts an app just to read its details, and it explains common
+      problems in plain language, with a button to fix them where possible.
+    </p>
+    <p xml:lang="de">
+      Easy Installer startet eine App nie, nur um ihre Angaben zu lesen, und erklärt häufige
+      Probleme in einfachen Worten – wo möglich mit einem Knopf, der sie behebt.
+    </p>
+    <p xml:lang="nl">
+      Easy Installer start een app nooit alleen om de gegevens ervan te lezen, en legt veelvoorkomende
+      problemen in gewone taal uit, waar mogelijk met een knop om ze op te lossen.
+    </p>
+  </description>
+
+  <url type="homepage">https://codingstukka.github.io/easy-installer/</url>
+  <url type="bugtracker">https://github.com/CodingStukka/easy-installer/issues</url>
+  <url type="vcs-browser">https://github.com/CodingStukka/easy-installer</url>
+
+  <launchable type="desktop-id">com.roothirsch.EasyInstaller.desktop</launchable>
+
+  <provides>
+    <binary>easy-installer</binary>
+    <mediatype>application/vnd.appimage</mediatype>
+    <mediatype>application/x-iso9660-appimage</mediatype>
+    <mediatype>application/x-appimage</mediatype>
+  </provides>
+
+  <categories>
+    <category>System</category>
+    <category>PackageManager</category>
+  </categories>
+
+  <keywords>
+    <keyword>AppImage</keyword>
+    <keyword>install</keyword>
+    <keyword>uninstall</keyword>
+    <keyword>update</keyword>
+    <keyword>launcher</keyword>
+    <keyword xml:lang="de">installieren</keyword>
+    <keyword xml:lang="de">deinstallieren</keyword>
+    <keyword xml:lang="de">aktualisieren</keyword>
+    <keyword xml:lang="nl">installeren</keyword>
+    <keyword xml:lang="nl">verwijderen</keyword>
+    <keyword xml:lang="nl">bijwerken</keyword>
+  </keywords>
+
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#f6dcb4</color>
+    <color type="primary" scheme_preference="dark">#5c3d22</color>
+  </branding>
+
+  <content_rating type="oars-1.1" />
+
+  <translation type="gettext">easy-installer</translation>
+
+  <releases>
+    <release version="0.2.1" date="2026-10-01">
+      <description>
+        <p>Fixes from a careful review of the new features.</p>
+        <p xml:lang="de">Korrekturen aus einer gründlichen Prüfung der neuen Funktionen.</p>
+        <p xml:lang="nl">Verbeteringen na een grondige controle van de nieuwe functies.</p>
+        <ul>
+          <li>Files you saved inside an archive app's folder are kept or moved to the trash, never deleted</li>
+          <li xml:lang="de">Dateien, die du im Ordner einer Archiv-App gespeichert hast, bleiben erhalten oder landen im Papierkorb, sie werden nie gelöscht</li>
+          <li xml:lang="nl">Bestanden die je in de map van een archief-app hebt opgeslagen, blijven bewaard of gaan naar de prullenbak en worden nooit gewist</li>
+          <li>An app that updated itself is never set back to an older version by an outdated offer</li>
+          <li xml:lang="de">Eine App, die sich selbst aktualisiert hat, wird nie durch ein veraltetes Angebot auf eine ältere Version zurückgesetzt</li>
+          <li xml:lang="nl">Een app die zichzelf heeft bijgewerkt, wordt nooit door een verouderd aanbod teruggezet naar een oudere versie</li>
+          <li>Archives that are not apps are refused with a clear explanation</li>
+          <li xml:lang="de">Archive, die keine Apps sind, werden mit einer verständlichen Erklärung abgelehnt</li>
+          <li xml:lang="nl">Archieven die geen apps zijn, worden met een duidelijke uitleg geweigerd</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2026-09-30">
+      <description>
+        <p>Easy Installer now looks after your apps once they are installed.</p>
+        <p xml:lang="de">Easy Installer kümmert sich jetzt auch um deine Apps, nachdem sie installiert sind.</p>
+        <p xml:lang="nl">Easy Installer zorgt nu ook voor je apps nadat ze zijn geïnstalleerd.</p>
+        <ul>
+          <li>Checks for updates and installs them with one click</li>
+          <li xml:lang="de">Sucht nach Updates und installiert sie mit einem Klick</li>
+          <li xml:lang="nl">Controleert op updates en installeert ze met één klik</li>
+          <li>Keeps the previous version for a while, so you can go back</li>
+          <li xml:lang="de">Bewahrt die vorherige Version eine Weile auf, damit du zurückkehren kannst</li>
+          <li xml:lang="nl">Bewaart de vorige versie een tijdje, zodat je terug kunt gaan</li>
+          <li>Notices when an app has updated itself and shows the right version</li>
+          <li xml:lang="de">Bemerkt, wenn sich eine App selbst aktualisiert hat, und zeigt die richtige Version</li>
+          <li xml:lang="nl">Merkt het als een app zichzelf heeft bijgewerkt en toont de juiste versie</li>
+          <li>Lets you install a second version next to the one you have, or replace it</li>
+          <li xml:lang="de">Installiert auf Wunsch eine zweite Version neben der vorhandenen, statt sie zu ersetzen</li>
+          <li xml:lang="nl">Installeert desgewenst een tweede versie naast de versie die je hebt, in plaats van die te vervangen</li>
+          <li>Offers to move an app's settings and data to the trash when you uninstall it</li>
+          <li xml:lang="de">Bietet beim Deinstallieren an, die Einstellungen und Daten einer App in den Papierkorb zu verschieben</li>
+          <li xml:lang="nl">Biedt bij het verwijderen aan om de instellingen en gegevens van een app naar de prullenbak te verplaatsen</li>
+          <li>Shows where an app was downloaded from and whether its maker signed it</li>
+          <li xml:lang="de">Zeigt, woher eine App heruntergeladen wurde und ob ihr Hersteller sie signiert hat</li>
+          <li xml:lang="nl">Laat zien waar een app vandaan is gedownload en of de maker haar heeft ondertekend</li>
+          <li>Installs apps that come as an archive (.zip, .tar.gz, .tar.xz)</li>
+          <li xml:lang="de">Installiert Apps, die als Archiv kommen (.zip, .tar.gz, .tar.xz)</li>
+          <li xml:lang="nl">Installeert apps die als archief komen (.zip, .tar.gz, .tar.xz)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.0" date="2026-09-29">
+      <description>
+        <p>First release.</p>
+        <ul>
+          <li>Install AppImages for yourself or for everyone on the computer</li>
+          <li>Name, icon, version and categories are read from the AppImage itself</li>
+          <li>Uninstall from the app window or from the app's own menu entry</li>
+          <li>Helps Electron apps start on Ubuntu 24.04 and newer</li>
+          <li>Available in English, German and Dutch</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

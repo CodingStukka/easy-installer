@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Easy Installer</title>
+  <defs>
+    <radialGradient id="shadow" cx="64" cy="112" r="50" gradientTransform="matrix(1 0 0 0.16 0 94.08)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="front" x1="0" y1="60" x2="0" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efc585"/>
+      <stop offset="1" stop-color="#dba25a"/>
+    </linearGradient>
+    <linearGradient id="inside" x1="0" y1="46" x2="0" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8f5d33"/>
+      <stop offset="1" stop-color="#5e3a1d"/>
+    </linearGradient>
+    <linearGradient id="flap-left" x1="6" y1="40" x2="26" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6d6a3"/>
+      <stop offset="1" stop-color="#d9a35e"/>
+    </linearGradient>
+    <linearGradient id="flap-right" x1="122" y1="40" x2="102" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6d6a3"/>
+      <stop offset="1" stop-color="#d9a35e"/>
+    </linearGradient>
+    <linearGradient id="flap-back" x1="0" y1="34" x2="0" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9a462"/>
+      <stop offset="1" stop-color="#b57b3c"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="0" y1="8" x2="0" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#78b0f0"/>
+      <stop offset="1" stop-color="#2f7de0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="64" cy="112" rx="50" ry="8" fill="url(#shadow)"/>
+
+  <!-- bottom thickness of the box -->
+  <path d="M22 64H106A2 2 0 0 1 108 66V104A8 8 0 0 1 100 112H28A8 8 0 0 1 20 104V66A2 2 0 0 1 22 64Z" fill="#a86b30"/>
+
+  <!-- flaps (open lid) -->
+  <path d="M32 38H96L100 48H28Z" fill="url(#flap-back)" stroke="url(#flap-back)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M20 60L28 48L16 41L7 53Z" fill="url(#flap-left)" stroke="url(#flap-left)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M108 60L100 48L112 41L121 53Z" fill="url(#flap-right)" stroke="url(#flap-right)" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- inside of the box -->
+  <path d="M28 48H100L108 60H20Z" fill="url(#inside)"/>
+
+  <!-- arrow going into the box -->
+  <path d="M56 12H72V35H87L64 60L41 35H56Z" fill="#1a5fb4" stroke="#1a5fb4" stroke-width="6" stroke-linejoin="round" transform="translate(0 3)"/>
+  <path d="M56 12H72V35H87L64 60L41 35H56Z" fill="url(#arrow)" stroke="url(#arrow)" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M56 12H72" stroke="#a9cdf7" stroke-width="2" stroke-linecap="round" transform="translate(0 -2)" opacity="0.9"/>
+
+  <!-- front of the box -->
+  <path d="M22 60H106A2 2 0 0 1 108 62V100A8 8 0 0 1 100 108H28A8 8 0 0 1 20 100V62A2 2 0 0 1 22 60Z" fill="url(#front)"/>
+  <path d="M22 60H106A2 2 0 0 1 108 62V63H20V62A2 2 0 0 1 22 60Z" fill="#fbe5c2"/>
+
+  <!-- shipping label -->
+  <rect x="70" y="80" width="28" height="18" rx="2.5" fill="#fdf8ee"/>
+  <rect x="74" y="85" width="20" height="2.5" rx="1.25" fill="#c0bfbc"/>
+  <rect x="74" y="90.5" width="13" height="2.5" rx="1.25" fill="#c0bfbc"/>
+</svg>

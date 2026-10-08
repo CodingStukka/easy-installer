@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to install apps on Linux – a beginner's guide | Easy Installer</title>
+  <meta name="description" content="New to Linux? Software Center, .deb, AppImage, .zip: what these files are, which one you've downloaded, and how to install programs on Linux, including AppImages.">
+  <link rel="canonical" href="https://codingstukka.github.io/easy-installer/new-to-linux/">
+  <meta name="theme-color" content="#fbf8f2">
+  <link rel="icon" href="../assets/img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Easy Installer">
+  <meta property="og:title" content="New to Linux? Here's how installing apps works.">
+  <meta property="og:description" content="Software Center, .deb, AppImage, .zip: what they are, which one you've got, and how to get it into your app menu.">
+  <meta property="og:url" content="https://codingstukka.github.io/easy-installer/new-to-linux/">
+  <meta property="og:image" content="https://codingstukka.github.io/easy-installer/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do I install an AppImage on Linux?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Double-click the .AppImage file, or drag it onto Easy Installer. Check the name and icon, click Install, and the app appears in your app menu and search." } },
+      { "@type": "Question", "name": "How do I install programs on Linux?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Look in your Software Center first. If the maker offers a .deb, double-click it. If you only get an AppImage or a .zip / .tar.gz, Easy Installer installs it for you." } },
+      { "@type": "Question", "name": "Does Easy Installer make AppImages?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It doesn't build or change apps. It manages the AppImages and portable apps you download: menu entry, icon, updates and uninstalling." } },
+      { "@type": "Question", "name": "Where are my installed apps stored?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In ~/Applications when you install just for yourself, or in /opt/appimages for everyone. The app's details in Easy Installer show the exact folder." } },
+      { "@type": "Question", "name": "How do I uninstall an AppImage?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Click the menu next to the app in Easy Installer and choose Uninstall…, or right-click the app in your dock or app grid. Its data is only moved to the trash if you tick it." } },
+      { "@type": "Question", "name": "Which Linux does Easy Installer run on?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ubuntu 24.04 or newer and systems based on it, like Zorin OS 18. It needs GTK 4.14 and libadwaita 1.5 or newer." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../assets/img/icon.svg" alt="" width="36" height="36"><span>Easy Installer</span></a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="../#install">Install</a></li>
+          <li><a href="../#what-it-does">What it does</a></li>
+          <li><a href="../#why">Why</a></li>
+          <li><a href="./" aria-current="page">New to Linux?</a></li>
+          <li><a class="gh" href="https://github.com/CodingStukka/easy-installer"><svg aria-hidden="true"><use href="../assets/icons.svg#github"/></svg>GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <a class="back-link" href="../"><svg aria-hidden="true"><use href="../assets/icons.svg#arrow-left"/></svg>Back to Easy Installer</a>
+        <p class="kicker">Beginner's guide</p>
+        <h1>New to Linux? Here's how installing apps works.</h1>
+        <p class="lead">Software Center, .deb, AppImage, .zip: what all these files are, which one you've got, and how to get it into your app menu.</p>
+      </div>
+    </header>
+
+    <section class="section section--surface" aria-labelledby="types-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">App types on Linux</p>
+          <h2 class="h2" id="types-title">Which file did you download?</h2>
+          <p class="lead">Linux apps come in a few different shapes. Here's what each one is, and what installs it.</p>
+        </div>
+        <ul class="types">
+          <li>
+            <div class="exts"><span>Software Center</span></div>
+            <svg aria-hidden="true"><use href="../assets/icons.svg#store"/></svg>
+            <div><h3>App store: Snap and Flatpak</h3><p>Open the Software Center, search, click Install. The easiest way, if your app is there.</p></div>
+            <div class="who"><small>INSTALLED WITH</small><span>Your Software Center</span></div>
+          </li>
+          <li>
+            <div class="exts"><span><code>.deb</code></span><span><code>.rpm</code></span></div>
+            <svg aria-hidden="true"><use href="../assets/icons.svg#package"/></svg>
+            <div><h3>Packages</h3><p>Made for one family of systems: .deb for Ubuntu, Mint and Debian, .rpm for Fedora. Your system installs and updates them.</p></div>
+            <div class="who"><small>INSTALLED WITH</small><span>Your system</span></div>
+          </li>
+          <li class="ours">
+            <div class="exts"><span><code>.AppImage</code></span></div>
+            <svg aria-hidden="true"><use href="../assets/icons.svg#file-box"/></svg>
+            <div><h3>AppImage</h3><p>One file with the whole app inside. Runs on almost any Linux, but on its own it isn't installed: no menu entry, no icon, no updates.</p></div>
+            <div class="who"><small>INSTALLED WITH</small><span><img src="../assets/img/icon.svg" alt="" width="16" height="16">Easy Installer</span></div>
+          </li>
+          <li class="ours">
+            <div class="exts"><span><code>.zip</code></span><span><code>.tar.gz</code></span><span><code>.tar.xz</code></span></div>
+            <svg aria-hidden="true"><use href="../assets/icons.svg#file-archive"/></svg>
+            <div><h3>Portable archive</h3><p>A packed folder with the app inside. Unpack it and start the program. Again: no menu entry, nothing to update or remove it with.</p></div>
+            <div class="who"><small>INSTALLED WITH</small><span><img src="../assets/img/icon.svg" alt="" width="16" height="16">Easy Installer</span></div>
+          </li>
+          <li>
+            <div class="exts"><span><code>install.sh</code></span><span><code>.run</code></span></div>
+            <svg aria-hidden="true"><use href="../assets/icons.svg#square-terminal"/></svg>
+            <div><h3>Installer script</h3><p>The maker's own installer. Follow their instructions. Easy Installer tells you when you've picked up one of these.</p></div>
+            <div class="who"><small>INSTALLED WITH</small><span>The maker's instructions</span></div>
+          </li>
+        </ul>
+
+        <div class="versus">
+          <div class="versus-head">
+            <div><h2>.deb or AppImage?</h2><p>Both are fine. They're just good at different things.</p></div>
+            <p>An AppImage is a portable app: one file that contains the whole program. No setup, nothing installed into your system. A .deb is a package your system installs and looks after.</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col"><span class="visually-hidden">Feature</span></th><th scope="col">.deb / Software Center</th><th scope="col">AppImage on its own</th><th scope="col">AppImage + Easy Installer</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Shows up in your app menu</td><td class="yes" aria-label="yes">✓</td><td class="no" aria-label="no">✕</td><td class="yes" aria-label="yes">✓</td></tr>
+                <tr><td>Easy updates</td><td class="yes" aria-label="yes">✓</td><td class="no" aria-label="no">✕</td><td class="yes" aria-label="yes">✓</td></tr>
+                <tr><td>Easy to uninstall</td><td class="yes" aria-label="yes">✓</td><td class="no" aria-label="no">✕</td><td class="yes" aria-label="yes">✓</td></tr>
+                <tr><td>Runs on almost any Linux</td><td class="no" aria-label="no">✕</td><td class="yes" aria-label="yes">✓</td><td class="yes" aria-label="yes">✓</td></tr>
+                <tr><td>Newest version, straight from the maker</td><td class="some" aria-label="sometimes">–</td><td class="yes" aria-label="yes">✓</td><td class="yes" aria-label="yes">✓</td></tr>
+                <tr><td>No admin password needed</td><td class="no" aria-label="no">✕</td><td class="yes" aria-label="yes">✓</td><td class="yes" aria-label="yes">✓</td></tr>
+                <tr><td>Two versions side by side</td><td class="no" aria-label="no">✕</td><td class="yes" aria-label="yes">✓</td><td class="yes" aria-label="yes">✓</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="footnote"><svg aria-hidden="true"><use href="../assets/icons.svg#info"/></svg>Software Center versions are checked by your distribution, but can be a few versions behind.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">FAQ</p>
+          <h2 class="h2" id="faq-title">Questions people ask.</h2>
+        </div>
+        <div class="faq">
+          <div><h3>How do I install an AppImage on Linux?</h3><p>Double-click the .AppImage file, or drag it onto Easy Installer. Check the name and icon, click Install, and the app appears in your app menu and search.</p></div>
+          <div><h3>How do I install programs on Linux?</h3><p>Look in your Software Center first. If the maker offers a .deb, double-click it. If you only get an AppImage or a .zip / .tar.gz, Easy Installer installs it for you.</p></div>
+          <div><h3>Does Easy Installer make AppImages?</h3><p>No. It doesn't build or change apps. It manages the AppImages and portable apps you download: menu entry, icon, updates and uninstalling.</p></div>
+          <div><h3>Where are my installed apps stored?</h3><p>In <code>~/Applications</code> when you install just for yourself, or in <code>/opt/appimages</code> for everyone. The app's details in Easy Installer show the exact folder.</p></div>
+          <div><h3>How do I uninstall an AppImage?</h3><p>Click the menu next to the app in Easy Installer and choose Uninstall…, or right-click the app in your dock or app grid. Its data is only moved to the trash if you tick it.</p></div>
+          <div><h3>Which Linux does it run on?</h3><p>Ubuntu 24.04 or newer and systems based on it, like Zorin OS 18. It needs GTK 4.14 and libadwaita 1.5 or newer.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--night cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Got an AppImage? Let Easy Installer handle it.</h2>
+        <a class="btn btn--primary" href="https://github.com/CodingStukka/easy-installer/releases/download/v0.2.1/easy-installer_0.2.1_all.deb"><svg aria-hidden="true"><use href="../assets/icons.svg#download"/></svg>Download for Ubuntu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../assets/img/icon.svg" alt="" width="28" height="28"><span>Easy Installer · made by Stukka</span></a>
+      <ul>
+        <li><a href="https://github.com/CodingStukka/easy-installer">GitHub</a></li>
+        <li><a href="https://github.com/CodingStukka/easy-installer/releases">Releases</a></li>
+        <li><a href="https://github.com/CodingStukka/easy-installer/issues">Report a problem</a></li>
+        <li><a href="https://github.com/CodingStukka/easy-installer/blob/main/LICENSE">License (MIT)</a></li>
+        <li><a href="../personal-note/">A personal note</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

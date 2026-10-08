@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Easy Installer – Install AppImages and apps on Linux, the easy way</title>
+  <meta name="description" content="Easy Installer is the app manager for AppImages on Linux: double-click a download to install it, find it in your app menu, update it in one click and remove it cleanly. Free and open source.">
+  <link rel="canonical" href="https://codingstukka.github.io/easy-installer/">
+  <meta name="theme-color" content="#fbf8f2">
+  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Easy Installer">
+  <meta property="og:title" content="Install apps on Linux. The easy way.">
+  <meta property="og:description" content="The app manager for AppImages: install, update and remove them like on Windows or Mac.">
+  <meta property="og:url" content="https://codingstukka.github.io/easy-installer/">
+  <meta property="og:image" content="https://codingstukka.github.io/easy-installer/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Easy Installer",
+    "description": "The app manager for AppImages on Linux: install, update and remove AppImages and portable apps with one click.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Linux (Ubuntu 24.04 or newer, Zorin OS 18)",
+    "softwareVersion": "0.2.1",
+    "license": "https://opensource.org/license/mit",
+    "url": "https://codingstukka.github.io/easy-installer/",
+    "downloadUrl": "https://github.com/CodingStukka/easy-installer/releases/download/v0.2.1/easy-installer_0.2.1_all.deb",
+    "image": "https://codingstukka.github.io/easy-installer/assets/img/app-window.webp",
+    "author": { "@type": "Person", "name": "Stukka" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/img/icon.svg" alt="" width="36" height="36"><span>Easy Installer</span></a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#install">Install</a></li>
+          <li><a href="#what-it-does">What it does</a></li>
+          <li><a href="#why">Why</a></li>
+          <li><a href="new-to-linux/">New to Linux?</a></li>
+          <li><a class="gh" href="https://github.com/CodingStukka/easy-installer"><svg aria-hidden="true"><use href="assets/icons.svg#github"/></svg>GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><svg aria-hidden="true"><use href="assets/icons.svg#package-open"/></svg>The app manager for AppImages</p>
+          <h1 id="hero-title"><span>Install apps on Linux.</span> <span>The easy way.</span></h1>
+          <p class="lead">Easy Installer manages your AppImages and portable apps. Double-click a download to install it, find it in your app menu, keep it up to date and remove it cleanly. Just like running a setup on Windows, or dragging an app to Applications on a Mac.</p>
+          <div class="ctas">
+            <a class="btn btn--primary" href="https://github.com/CodingStukka/easy-installer/releases/download/v0.2.1/easy-installer_0.2.1_all.deb"><svg aria-hidden="true"><use href="assets/icons.svg#download"/></svg>Download for Ubuntu</a>
+            <a class="btn btn--ghost" href="new-to-linux/">New to Linux? Start here<svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a>
+          </div>
+          <p class="meta">Free and open source (MIT) · .deb for Ubuntu 24.04+ and Ubuntu-based systems like Zorin OS 18 · Version 0.2.1</p>
+        </div>
+        <div class="stage">
+          <img class="window" src="assets/img/app-window.webp" width="760" height="640" alt="The Easy Installer window lists installed apps with their versions. Two apps show an Update button, and a banner says that 2 updates are available.">
+          <div class="chip chip--file" aria-hidden="true">
+            <span class="file-icon"><svg><use href="assets/icons.svg#file-box"/></svg></span>
+            <span><strong>Inkpad-1.2.8-x86_64.AppImage</strong><small>~/Downloads · double-click to install</small></span>
+          </div>
+          <div class="chip chip--done" aria-hidden="true"><svg><use href="assets/icons.svg#circle-check"/></svg>Inkpad is now in your app menu</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="install" aria-labelledby="install-title">
+      <div class="wrap install-grid">
+        <div class="install-steps">
+          <div class="section-head">
+            <p class="kicker">01 — Install</p>
+            <h2 class="h2" id="install-title">How to install Easy Installer.</h2>
+          </div>
+          <ol class="steps">
+            <li><span class="num">1</span><div><strong>Download the .deb</strong><p>easy-installer_0.2.1_all.deb from the latest release.</p></div></li>
+            <li><span class="num">2</span><div><strong>Open it</strong><p>Double-click the file. Your Software Center installs it.</p></div></li>
+            <li><span class="num">3</span><div><strong>Open your first AppImage</strong><p>Easy Installer offers to become the default app for AppImage files.</p></div></li>
+          </ol>
+          <div><a class="btn btn--primary" href="https://github.com/CodingStukka/easy-installer/releases/download/v0.2.1/easy-installer_0.2.1_all.deb"><svg aria-hidden="true"><use href="assets/icons.svg#download"/></svg>Download .deb · v0.2.1</a></div>
+          <p class="small-note">Needs Ubuntu 24.04, Zorin OS 18 or newer (GTK 4.14, libadwaita 1.5). Everything else comes with the package.</p>
+        </div>
+        <div class="install-terminal">
+          <h3>Or in a terminal:</h3>
+          <div class="terminal">
+            <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+<pre><code><span class="c"># download the latest version</span>
+wget https://github.com/CodingStukka/easy-installer/releases/download/v0.2.1/easy-installer_0.2.1_all.deb
+<span class="c"># install it (asks for your password)</span>
+sudo apt install ./easy-installer_0.2.1_all.deb</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--night" id="what-it-does" aria-labelledby="without-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">02 — What does it do?</p>
+          <h2 class="h2" id="without-title">Without Easy Installer, you are the app manager.</h2>
+          <p class="lead">An AppImage is just a file. Without help you write its menu entry yourself, look for updates yourself and clean up yourself. With Easy Installer you see at a glance what's installed, what's being updated, and how to remove it.</p>
+        </div>
+        <div class="compare">
+          <div class="terminal">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>Without Easy Installer</span></div>
+<pre><code><span class="c"># 1. move it somewhere permanent</span>
+mv ~/Downloads/Blockwork*.AppImage ~/Applications/
+<span class="c"># 2. make it executable</span>
+chmod +x ~/Applications/Blockwork.AppImage
+<span class="c"># 3. find an icon somewhere…</span>
+./Blockwork.AppImage --appimage-extract
+<span class="c"># 4. write a launcher by hand</span>
+nano ~/.local/share/applications/blockwork.desktop
+<span class="c"># 5. tell the desktop about it</span>
+update-desktop-database ~/.local/share/applications
+<span class="c"># 6. a month later: which file was Blockwork again?</span>
+ls ~/Downloads ~/Applications
+<span class="c"># 7. is there a new version? check the website…</span>
+<span class="c"># 8. uninstall: delete 3 files you hopefully remember</span>
+rm ~/Applications/Blockwork.AppImage ~/.local/share/…</code></pre>
+          </div>
+          <div class="with-card">
+            <h3><img src="assets/img/icon.svg" alt="" width="22" height="22">With Easy Installer</h3>
+            <ul class="with-list">
+              <li><span class="icon-tile"><svg aria-hidden="true"><use href="assets/icons.svg#layout-list"/></svg></span><div><strong>All your apps in one list</strong><span>Name, version, size, and whether it's just for you</span></div><svg class="ok" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></li>
+              <li><span class="icon-tile"><svg aria-hidden="true"><use href="assets/icons.svg#app-window"/></svg></span><div><strong>Menu entry and icon, done for you</strong><span>Real name, real icon, the file types it opens</span></div><svg class="ok" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></li>
+              <li><span class="icon-tile"><svg aria-hidden="true"><use href="assets/icons.svg#refresh-cw"/></svg></span><div><strong>See what's being updated</strong><span>New versions, Update All, and Go Back</span></div><svg class="ok" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></li>
+              <li><span class="icon-tile"><svg aria-hidden="true"><use href="assets/icons.svg#folder-open"/></svg></span><div><strong>Know where everything lives</strong><span>The app's folder, where it was downloaded from</span></div><svg class="ok" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></li>
+              <li><span class="icon-tile"><svg aria-hidden="true"><use href="assets/icons.svg#trash-2"/></svg></span><div><strong>Remove it cleanly</strong><span>App, launcher and icon. Its data only if you want</span></div><svg class="ok" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="update-title">
+      <div class="wrap feature-split">
+        <div class="stack">
+          <div class="section-head">
+            <p class="kicker">Install &amp; update</p>
+            <h2 class="h2" id="update-title">Install an AppImage in three steps. Update it in one click.</h2>
+          </div>
+          <ol class="mini-steps">
+            <li><span class="num">1</span><div><strong>Open the AppImage</strong><span>Double-click it, or drop it onto the window.</span></div></li>
+            <li><span class="num">2</span><div><strong>Check what you get</strong><span>Name, icon and version, read without running the app.</span></div></li>
+            <li><span class="num">3</span><div><strong>Click Install</strong><span>It's in your app menu and search right away.</span></div></li>
+          </ol>
+          <ul class="update-grid">
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#refresh-cw"/></svg><div><strong>One-click updates</strong><span>Or Update All at once.</span></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#undo-2"/></svg><div><strong>Go Back</strong><span>Old version kept for 14 days.</span></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"/></svg><div><strong>Self-updates noticed</strong><span>The launcher stays current.</span></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#copy"/></svg><div><strong>Keep both</strong><span>Old and new side by side.</span></div></li>
+          </ul>
+          <p class="note-box"><svg aria-hidden="true"><use href="assets/icons.svg#eye-off"/></svg>Only asks the server an app names itself, over HTTPS, at most once a day. Nothing about you or your apps is sent.</p>
+        </div>
+        <div class="screens">
+          <img class="back" src="assets/img/install-dialog.webp" width="760" height="640" loading="lazy" alt="The install dialog for Inkpad shows its icon, version and description, with a choice to install it only for you or for everyone on the computer.">
+          <img class="front" src="assets/img/updates-list.webp" width="608" height="320" loading="lazy" alt="The app list with a banner saying 2 updates are available and buttons such as Update to 1.1.4.">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="trust-title">
+      <div class="wrap">
+        <div class="split-head">
+          <div class="section-head">
+            <p class="kicker">Trust &amp; the rest</p>
+            <h2 class="h2" id="trust-title">Safe. Tidy. Handled.</h2>
+          </div>
+          <p>Easy Installer shows where an app comes from, cleans up after itself, and fixes the things that usually send you searching forums.</p>
+        </div>
+        <div class="bento">
+          <article class="card">
+            <div class="card-title"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield-check"/></svg><h3>Know where your apps come from</h3></div>
+            <p>See the website a file came from and who signed it. If a new version isn't signed by the same maker, you get a clear warning first.</p>
+            <div class="trust-pair">
+              <figure class="good">
+                <div class="shot"><img src="assets/img/trust-ok.webp" width="460" height="500" loading="lazy" alt="Install dialog for an update: the older version is kept for 14 days, the file was downloaded from github.com and is signed."></div>
+                <figcaption><svg aria-hidden="true"><use href="assets/icons.svg#shield-check"/></svg><div><strong>All good</strong>“Signed by the same maker as the installed version.”</div></figcaption>
+              </figure>
+              <figure class="warn">
+                <div class="shot"><img src="assets/img/trust-warning.webp" width="460" height="500" loading="lazy" alt="Install dialog with a warning: the installed version was signed by its maker, but this file is not signed by the same maker."></div>
+                <figcaption><svg aria-hidden="true"><use href="assets/icons.svg#triangle-alert"/></svg><div><strong>Careful</strong>Not signed by the same maker? You're warned before anything happens.</div></figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="card card--shot">
+            <div class="card-head"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-archive"/></svg><span class="tag">.zip .tar.gz .tar.xz</span></div>
+            <h3>Apps that come as a .zip</h3>
+            <p>Some apps come as a packed folder instead. Easy Installer unpacks it safely into its own folder. Several programs inside? You pick the one that starts the app.</p>
+            <div class="shot"><img src="assets/img/portable-app.webp" width="460" height="580" loading="lazy" alt="Install dialog for an app from an archive, where you choose the program that starts the app."></div>
+          </article>
+        </div>
+        <div class="bento bento-row-2">
+          <article class="card card--shot">
+            <div class="card-head"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#trash"/></svg></div>
+            <h3>Uninstall without leftovers</h3>
+            <p>App, launcher and icon are removed. Settings and data go to the trash, but only if you tick them. Your own files are never touched.</p>
+            <div class="shot"><img src="assets/img/uninstall.webp" width="460" height="460" loading="lazy" alt="Uninstall dialog with checkboxes to also move the app's settings, data and temporary files to the trash."></div>
+          </article>
+          <div class="small-cards">
+            <article class="card"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield-alert"/></svg><h3>Apps that won't start</h3><p>On Ubuntu 24.04+ many Electron apps hit the sandbox block. One password and they just start.</p></article>
+            <article class="card"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#plug-zap"/></svg><h3>Missing FUSE</h3><p>AppImages need libfuse2. Easy Installer installs the right package, or runs apps without it.</p></article>
+            <article class="card"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#users"/></svg><h3>Just you, or everyone</h3><p>No password for yourself. For all users on the PC, it asks once.</p></article>
+            <article class="card"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#eye"/></svg><h3>Never run to look inside</h3><p>Name and icon are read straight from the file. The app itself isn't started.</p></article>
+            <article class="card"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#languages"/></svg><h3>Speaks your language</h3><p>English, Deutsch and Nederlands. Light and dark mode, like your desktop.</p></article>
+            <article class="card"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#square-terminal"/></svg><h3>A command line, too</h3><p>install, list, update, rollback, uninstall: everything the window does, for scripts.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <div class="habits-top">
+          <div>
+            <p class="kicker">03 — But why?</p>
+            <h2 class="h2" id="why-title">Look, it can be this easy on Linux, too.</h2>
+          </div>
+          <div class="body">
+            <p>Lots of people would love to make the jump to Linux. What stops them is one thought: “It's different. I'll have to relearn everything.” And when things do work differently and nobody shows them the way, they get frustrated and go back, even though they really wanted to switch.</p>
+            <p>That's what Easy Installer is for: giving people what they're used to.</p>
+          </div>
+        </div>
+        <ul class="platforms" aria-label="How installing works on each system">
+          <li class="platform"><span class="os">Windows</span><span class="file"><svg aria-hidden="true"><use href="assets/icons.svg#file"/></svg>Setup.exe</span><h3>Double-click, Next, Next, Finish.</h3><p class="result"><svg aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>In the Start menu and Windows search</p></li>
+          <li class="platform"><span class="os">macOS</span><span class="file"><svg aria-hidden="true"><use href="assets/icons.svg#file"/></svg>App.dmg</span><h3>Open it, then drag it into Applications.</h3><p class="result"><svg aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>In Launchpad, Spotlight and the Dock</p></li>
+          <li class="platform"><span class="os">Linux · usually</span><span class="file"><svg aria-hidden="true"><use href="assets/icons.svg#file"/></svg>app.deb</span><h3>Software Center, or apt install.</h3><p class="result"><svg aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>In your app menu, updated with your system</p></li>
+          <li class="platform platform--bad"><span class="os">Linux · AppImage</span><span class="file"><svg aria-hidden="true"><use href="assets/icons.svg#file-box"/></svg>App.AppImage</span><h3>Double-click… it runs. Once.</h3><p class="result"><svg aria-hidden="true"><use href="assets/icons.svg#circle-x"/></svg>Not in your menu. No icon. Lost in Downloads.</p></li>
+        </ul>
+        <p class="flow-label">With Easy Installer, the AppImage works like the others:</p>
+        <ol class="flow">
+          <li class="step"><svg aria-hidden="true"><use href="assets/icons.svg#file-box"/></svg>Click the AppImage</li>
+          <li class="arrow" aria-hidden="true"><svg><use href="assets/icons.svg#arrow-right"/></svg></li>
+          <li class="step"><img src="assets/img/icon.svg" alt="" width="26" height="26">Easy Installer opens</li>
+          <li class="arrow" aria-hidden="true"><svg><use href="assets/icons.svg#arrow-right"/></svg></li>
+          <li class="step"><svg aria-hidden="true"><use href="assets/icons.svg#circle-check"/></svg>Click Install. Done.</li>
+        </ol>
+        <a class="teaser" href="new-to-linux/">
+          <svg aria-hidden="true"><use href="assets/icons.svg#book-open"/></svg>
+          <div><strong>New to Linux?</strong><span>Our beginner's guide explains Software Center, .deb, AppImage and .zip, and which one you've got.</span></div>
+          <em>Read the guide<svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></em>
+        </a>
+      </div>
+    </section>
+
+    <section class="section--night cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Ready? Install apps the easy way.</h2>
+        <a class="btn btn--primary" href="https://github.com/CodingStukka/easy-installer/releases/download/v0.2.1/easy-installer_0.2.1_all.deb"><svg aria-hidden="true"><use href="assets/icons.svg#download"/></svg>Download for Ubuntu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/img/icon.svg" alt="" width="28" height="28"><span>Easy Installer · made by Stukka</span></a>
+      <ul>
+        <li><a href="https://github.com/CodingStukka/easy-installer">GitHub</a></li>
+        <li><a href="https://github.com/CodingStukka/easy-installer/releases">Releases</a></li>
+        <li><a href="https://github.com/CodingStukka/easy-installer/issues">Report a problem</a></li>
+        <li><a href="https://github.com/CodingStukka/easy-installer/blob/main/LICENSE">License (MIT)</a></li>
+        <li><a href="personal-note/">A personal note</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

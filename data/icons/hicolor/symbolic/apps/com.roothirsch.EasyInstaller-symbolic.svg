@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Easy Installer</title>
+  <g fill="#241f31">
+    <!-- open box -->
+    <path d="M0.5 7.5 3 6.5V13h10V6.5l2.5 1V13.5A1.5 1.5 0 0 1 14 15H2A1.5 1.5 0 0 1 0.5 13.5Z"/>
+    <!-- arrow going into the box -->
+    <path d="M7 0.5A0.5 0.5 0 0 1 7.5 0h1A0.5 0.5 0 0 1 9 0.5V5h2.25a0.4 0.4 0 0 1 0.3 0.66L8.3 9.66a0.4 0.4 0 0 1 -0.6 0L4.45 5.66A0.4 0.4 0 0 1 4.75 5H7Z"/>
+  </g>
+</svg>

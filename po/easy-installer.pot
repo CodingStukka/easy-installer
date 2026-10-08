@@ -1,0 +1,4141 @@
+# Translation template for Easy Installer.
+# Copyright (C) 2026 roothirsch
+# This file is distributed under the same license as the easy-installer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: easy-installer 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-01 09:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: src/easy_installer/__main__.py:86
+msgid "The window toolkit it needs (GTK 4 and libadwaita) is not installed."
+msgstr ""
+
+#: src/easy_installer/__main__.py:89
+#, python-brace-format
+msgid "The installed libadwaita {found} is too old; version {needed} or newer is needed."
+msgstr ""
+
+#: src/easy_installer/__main__.py:93
+msgid "No graphical desktop was found."
+msgstr ""
+
+#: src/easy_installer/__main__.py:109
+#, python-brace-format
+msgid "Easy Installer cannot open its window: {problem}"
+msgstr ""
+
+#: src/easy_installer/__main__.py:110
+msgid "You can still use Easy Installer in the terminal, for example:"
+msgstr ""
+
+#: src/easy_installer/__main__.py:125
+msgid "Its window could not be loaded."
+msgstr ""
+
+#: src/easy_installer/cli.py:119
+msgid "usage: "
+msgstr ""
+
+#: src/easy_installer/cli.py:120
+msgid "positional arguments"
+msgstr ""
+
+#: src/easy_installer/cli.py:121
+msgid "options"
+msgstr ""
+
+#: src/easy_installer/cli.py:122
+msgid "show this help message and exit"
+msgstr ""
+
+#: src/easy_installer/cli.py:123
+#, python-format
+msgid "%(prog)s: error: %(message)s\n"
+msgstr ""
+
+#: src/easy_installer/cli.py:124
+#, python-format
+msgid "the following arguments are required: %s"
+msgstr ""
+
+#: src/easy_installer/cli.py:125
+#, python-format
+msgid "invalid choice: %(value)r (choose from %(choices)s)"
+msgstr ""
+
+#: src/easy_installer/cli.py:126
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr ""
+
+#: src/easy_installer/cli.py:127
+msgid "expected one argument"
+msgstr ""
+
+#: src/easy_installer/cli.py:128
+#, python-format
+msgid "argument %(argument_name)s: %(message)s"
+msgstr ""
+
+#: src/easy_installer/cli.py:129
+#, python-format
+msgid "not allowed with argument %s"
+msgstr ""
+
+#: src/easy_installer/cli.py:130
+#, python-format
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr ""
+
+#: src/easy_installer/cli.py:257 src/easy_installer/core/updates.py:177
+#, python-brace-format
+msgid "{size} MB"
+msgstr ""
+
+#. Translators: the short answer for "yes" accepted at [Y/n] questions (lower case).
+#: src/easy_installer/cli.py:266 src/easy_installer/cli.py:458
+#: src/easy_installer/cli.py:1386
+msgid "yes"
+msgstr ""
+
+#. Translators: the short answer for "no" accepted at [Y/n] questions (lower case).
+#: src/easy_installer/cli.py:266 src/easy_installer/cli.py:463
+#: src/easy_installer/cli.py:1358
+msgid "no"
+msgstr ""
+
+#: src/easy_installer/cli.py:270 src/easy_installer/cli.py:1427
+msgid "unknown"
+msgstr ""
+
+#: src/easy_installer/cli.py:274 src/easy_installer/gui/app_row.py:27
+#: src/easy_installer/gui/install_dialog.py:338
+msgid "Only for me"
+msgstr ""
+
+#: src/easy_installer/cli.py:274 src/easy_installer/gui/app_row.py:27
+#: src/easy_installer/gui/install_dialog.py:341
+msgid "Everyone on this computer"
+msgstr ""
+
+#: src/easy_installer/cli.py:278
+msgid "Only me"
+msgstr ""
+
+#: src/easy_installer/cli.py:278
+msgid "Everyone"
+msgstr ""
+
+#: src/easy_installer/cli.py:332
+msgid "signed by the same maker as the installed version"
+msgstr ""
+
+#: src/easy_installer/cli.py:334
+#, python-brace-format
+msgid "signed with a key named “{signer}”"
+msgstr ""
+
+#: src/easy_installer/cli.py:335
+msgid "signed with a key that has no name"
+msgstr ""
+
+#: src/easy_installer/cli.py:337
+msgid "the signature does not match"
+msgstr ""
+
+#: src/easy_installer/cli.py:339
+msgid "signed, but the signature could not be checked"
+msgstr ""
+
+#: src/easy_installer/cli.py:342
+#, python-brace-format
+msgid "key {fingerprint}"
+msgstr ""
+
+#: src/easy_installer/cli.py:355
+msgid "settings"
+msgstr ""
+
+#: src/easy_installer/cli.py:356
+msgid "app data"
+msgstr ""
+
+#: src/easy_installer/cli.py:357
+msgid "temporary files"
+msgstr ""
+
+#: src/easy_installer/cli.py:358
+msgid "app state"
+msgstr ""
+
+#: src/easy_installer/cli.py:359
+msgid "settings and data"
+msgstr ""
+
+#. Translators: the short answer for "yes" accepted at [Y/n] questions (lower case).
+#: src/easy_installer/cli.py:458
+msgid "y"
+msgstr ""
+
+#. Translators: the short answer for "no" accepted at [Y/n] questions (lower case).
+#: src/easy_installer/cli.py:463
+msgid "n"
+msgstr ""
+
+#: src/easy_installer/cli.py:474
+msgid "No answer was given. Add -y to skip the question."
+msgstr ""
+
+#: src/easy_installer/cli.py:494
+msgid "Please answer y (yes) or n (no)."
+msgstr ""
+
+#: src/easy_installer/cli.py:509
+#, python-brace-format
+msgid "Please type one of: {choices}"
+msgstr ""
+
+#: src/easy_installer/cli.py:528
+#, python-brace-format
+msgid "the ID of the app (see: {command})"
+msgstr ""
+
+#: src/easy_installer/cli.py:540 src/easy_installer/cli.py:557
+msgid "show more details, for example the technical cause of an error (use -vv for even more)"
+msgstr ""
+
+#: src/easy_installer/cli.py:545
+#, python-brace-format
+msgid "Install AppImage apps so they appear in your app menu, update them, and remove them again. Start {prog} without a command to open its window."
+msgstr ""
+
+#: src/easy_installer/cli.py:548
+#, python-brace-format
+msgid ""
+"Examples:\n"
+"  {prog} install ~/Downloads/MyApp.AppImage\n"
+"  {prog} list\n"
+"  {prog} uninstall myapp"
+msgstr ""
+
+#: src/easy_installer/cli.py:555
+msgid "show the version of Easy Installer and exit"
+msgstr ""
+
+#: src/easy_installer/cli.py:559
+msgid "COMMAND"
+msgstr ""
+
+#: src/easy_installer/cli.py:559
+msgid "commands"
+msgstr ""
+
+#: src/easy_installer/cli.py:565
+msgid "show what is inside an AppImage or app archive (without installing it)"
+msgstr ""
+
+#: src/easy_installer/cli.py:566
+msgid "Show the name, version, icon and other details of an AppImage. The app is not started."
+msgstr ""
+
+#: src/easy_installer/cli.py:567
+msgid "App archives (.zip, .tar.gz, …) can be looked at, too."
+msgstr ""
+
+#: src/easy_installer/cli.py:569
+msgid "the .AppImage file to look at"
+msgstr ""
+
+#: src/easy_installer/cli.py:570 src/easy_installer/cli.py:575
+#: src/easy_installer/cli.py:601 src/easy_installer/cli.py:642
+#: src/easy_installer/cli.py:701 src/easy_installer/cli.py:739
+msgid "print machine-readable JSON"
+msgstr ""
+
+#: src/easy_installer/cli.py:573
+msgid "list the installed apps"
+msgstr ""
+
+#: src/easy_installer/cli.py:574
+msgid "List the apps installed with Easy Installer."
+msgstr ""
+
+#: src/easy_installer/cli.py:576 src/easy_installer/cli.py:698
+msgid "only apps installed just for you"
+msgstr ""
+
+#: src/easy_installer/cli.py:577 src/easy_installer/cli.py:699
+msgid "only apps installed for everyone on this computer"
+msgstr ""
+
+#: src/easy_installer/cli.py:584
+msgid "go back to the version of an app you had before its last update"
+msgstr ""
+
+#: src/easy_installer/cli.py:585
+msgid "Go back to the version of an app that was installed before its last update. The version you have now is kept, so you can switch back."
+msgstr ""
+
+#: src/easy_installer/cli.py:588 src/easy_installer/cli.py:599
+#: src/easy_installer/cli.py:627
+msgid "the copy installed just for you"
+msgstr ""
+
+#: src/easy_installer/cli.py:589 src/easy_installer/cli.py:628
+msgid "the copy installed for everyone (asks for your password)"
+msgstr ""
+
+#: src/easy_installer/cli.py:590
+msgid "do not ask before going back"
+msgstr ""
+
+#: src/easy_installer/cli.py:594
+msgid "show everything known about an installed app"
+msgstr ""
+
+#: src/easy_installer/cli.py:595
+msgid "Show everything Easy Installer knows about an installed app: version, size, where its updates come from, where it was downloaded from, its signature, the kept previous version and its settings and data folders."
+msgstr ""
+
+#: src/easy_installer/cli.py:600
+msgid "the copy installed for everyone on this computer"
+msgstr ""
+
+#: src/easy_installer/cli.py:605
+msgid "remove an installed app"
+msgstr ""
+
+#: src/easy_installer/cli.py:606
+msgid "Remove an installed app, its menu entry and its icon. Your personal files and settings are kept."
+msgstr ""
+
+#: src/easy_installer/cli.py:611
+msgid "remove the copy installed for everyone (asks for your password)"
+msgstr ""
+
+#: src/easy_installer/cli.py:612
+msgid "remove the copy installed just for you"
+msgstr ""
+
+#: src/easy_installer/cli.py:614
+msgid "remove an app installed just for you without the administrator password; the special permission it needed stays on this computer"
+msgstr ""
+
+#: src/easy_installer/cli.py:617
+msgid "also move the app's settings and data folders to the trash (they are listed first)"
+msgstr ""
+
+#: src/easy_installer/cli.py:619
+msgid "do not ask before uninstalling"
+msgstr ""
+
+#: src/easy_installer/cli.py:623
+msgid "make the menu entry and icon of an installed app again"
+msgstr ""
+
+#: src/easy_installer/cli.py:624
+msgid "Make the menu entry, the icon and the saved information of an installed app again from the app itself. The app stays where it is."
+msgstr ""
+
+#: src/easy_installer/cli.py:631
+msgid "start an installed app"
+msgstr ""
+
+#: src/easy_installer/cli.py:632
+msgid "Start an installed app, just like its menu entry does."
+msgstr ""
+
+#: src/easy_installer/cli.py:639
+msgid "check whether this computer is ready for AppImages"
+msgstr ""
+
+#: src/easy_installer/cli.py:640
+msgid "Check the parts of this computer that AppImages need, with tips on how to fix what is missing."
+msgstr ""
+
+#: src/easy_installer/cli.py:649
+msgid "install an AppImage or app archive so it appears in your app menu"
+msgstr ""
+
+#: src/easy_installer/cli.py:650
+msgid "Install an AppImage: the file is moved to your Applications folder and the app gets a menu entry with its own icon."
+msgstr ""
+
+#: src/easy_installer/cli.py:652
+msgid "An app that comes as an archive (.zip, .tar.gz, …) is unpacked into its own folder there; the archive itself is kept."
+msgstr ""
+
+#: src/easy_installer/cli.py:655
+msgid "the .AppImage file or app archive (.zip, .tar.gz, …) to install"
+msgstr ""
+
+#: src/easy_installer/cli.py:657
+msgid "install for everyone on this computer (asks for your password)"
+msgstr ""
+
+#: src/easy_installer/cli.py:659
+msgid "keep the original file where it is and install a copy"
+msgstr ""
+
+#: src/easy_installer/cli.py:661
+msgid "if another version of the app is installed, keep it and install this one next to it instead of replacing it"
+msgstr ""
+
+#: src/easy_installer/cli.py:664
+msgid "do not keep the version that is replaced (normally it is kept for a while, so you can go back to it)"
+msgstr ""
+
+#: src/easy_installer/cli.py:667
+msgid "app archives only: the program in the archive that starts the app, for example bin/myapp"
+msgstr ""
+
+#: src/easy_installer/cli.py:670
+msgid "how to handle apps whose security sandbox is blocked by this computer: auto (recommended), apparmor (add a system permission), no-sandbox (start without the sandbox) or none (change nothing)"
+msgstr ""
+
+#: src/easy_installer/cli.py:674
+msgid "let the app unpack itself on every start (needed when FUSE is missing): auto, yes or no"
+msgstr ""
+
+#: src/easy_installer/cli.py:677
+msgid "install even if the app is made for a different kind of computer"
+msgstr ""
+
+#: src/easy_installer/cli.py:678
+msgid "do not ask before installing"
+msgstr ""
+
+#: src/easy_installer/cli.py:684
+msgid "look for new versions of your apps and install them"
+msgstr ""
+
+#: src/easy_installer/cli.py:685
+msgid "Look for new versions of the installed apps and install them. Without an app ID or --all, it only shows which new versions there are."
+msgstr ""
+
+#: src/easy_installer/cli.py:687
+#, python-brace-format
+msgid ""
+"Examples:\n"
+"  {prog} update             (only look)\n"
+"  {prog} update --all       (install every new version)\n"
+"  {prog} update freecad     (update one app)"
+msgstr ""
+
+#: src/easy_installer/cli.py:693
+#, python-brace-format
+msgid "the ID of an app to update (see: {command})"
+msgstr ""
+
+#: src/easy_installer/cli.py:695
+msgid "update every app that has a new version"
+msgstr ""
+
+#: src/easy_installer/cli.py:697
+msgid "only show which new versions there are, do not install them"
+msgstr ""
+
+#: src/easy_installer/cli.py:700
+msgid "do not ask before updating"
+msgstr ""
+
+#: src/easy_installer/cli.py:720
+msgid "look for new versions of your apps automatically (yes or no)"
+msgstr ""
+
+#: src/easy_installer/cli.py:721
+msgid "hours between two automatic checks for new versions"
+msgstr ""
+
+#: src/easy_installer/cli.py:722
+msgid "days the replaced version of an app is kept after an update, so you can go back to it (0 = do not keep it)"
+msgstr ""
+
+#: src/easy_installer/cli.py:731
+msgid "show or change the settings"
+msgstr ""
+
+#: src/easy_installer/cli.py:732
+msgid "Show the settings, or change one of them."
+msgstr ""
+
+#: src/easy_installer/cli.py:733
+#, python-brace-format
+msgid ""
+"Settings:\n"
+"{keys}\n"
+"\n"
+"Examples:\n"
+"  {prog} settings\n"
+"  {prog} settings backup-days 30"
+msgstr ""
+
+#: src/easy_installer/cli.py:737
+msgid "the setting to show or change"
+msgstr ""
+
+#: src/easy_installer/cli.py:738
+msgid "the new value"
+msgstr ""
+
+#: src/easy_installer/cli.py:795
+#, python-brace-format
+msgid "The output could not be written: {reason}"
+msgstr ""
+
+#: src/easy_installer/cli.py:808
+msgid "Cancelled."
+msgstr ""
+
+#: src/easy_installer/cli.py:821 src/easy_installer/cli.py:849
+#: src/easy_installer/cli.py:859 src/easy_installer/cli.py:1709
+#: src/easy_installer/cli.py:2107
+#, python-brace-format
+msgid "Error: {message}"
+msgstr ""
+
+#: src/easy_installer/cli.py:821 src/easy_installer/cli.py:2103
+msgid "Something unexpected went wrong."
+msgstr ""
+
+#: src/easy_installer/cli.py:825
+msgid "Run the command again with --verbose to see the technical details."
+msgstr ""
+
+#: src/easy_installer/cli.py:839 src/easy_installer/core/privileged.py:274
+msgid "Authentication was cancelled."
+msgstr ""
+
+#: src/easy_installer/cli.py:844
+msgid "If you are sure, run the command again with --allow-foreign-arch."
+msgstr ""
+
+#: src/easy_installer/cli.py:854 src/easy_installer/cli.py:2109
+msgid "Details:"
+msgstr ""
+
+#: src/easy_installer/cli.py:874
+#, python-brace-format
+msgid "{name} went back to version {version} by itself."
+msgstr ""
+
+#: src/easy_installer/cli.py:878
+#, python-brace-format
+msgid "{name} updated itself to version {version}."
+msgstr ""
+
+#: src/easy_installer/cli.py:880
+#, python-brace-format
+msgid "{name} updated itself."
+msgstr ""
+
+#: src/easy_installer/cli.py:882
+#, python-brace-format
+msgid "{name} (installed for everyone) changed its own app file. To bring its menu entry up to date, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:886
+#, python-brace-format
+msgid "The app file of {name} now contains a different app. Nothing was changed. To repair it, install {name} again."
+msgstr ""
+
+#: src/easy_installer/cli.py:913
+msgid "Looking at the installed apps…"
+msgstr ""
+
+#: src/easy_installer/cli.py:973
+msgid "script"
+msgstr ""
+
+#: src/easy_installer/cli.py:973
+msgid "program"
+msgstr ""
+
+#: src/easy_installer/cli.py:1004
+#, python-brace-format
+msgid "{name} contains several programs that could start it:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1010
+#, python-brace-format
+msgid "{kind}, started by the installed version"
+msgstr ""
+
+#: src/easy_installer/cli.py:1012 src/easy_installer/cli.py:1420
+#, python-brace-format
+msgid "{kind}, recommended"
+msgstr ""
+
+#: src/easy_installer/cli.py:1015
+#, python-brace-format
+msgid "Which one should start the app? [{first}-{last}, Enter = {default}] "
+msgstr ""
+
+#: src/easy_installer/cli.py:1029
+msgid "--executable can only be used for an app that comes as an archive (.zip, .tar.gz, …)."
+msgstr ""
+
+#: src/easy_installer/cli.py:1036
+#, python-brace-format
+msgid "There is no program “{name}” in this archive."
+msgstr ""
+
+#: src/easy_installer/cli.py:1038
+#, python-brace-format
+msgid "Programs that could start the app: {names}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1041 src/easy_installer/cli.py:1047
+#: src/easy_installer/cli.py:1653 src/easy_installer/cli.py:1745
+#: src/easy_installer/cli.py:2256 src/easy_installer/cli.py:2355
+msgid "Cancelled. Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/cli.py:1046 src/easy_installer/cli.py:2354
+msgid "Proceed? [Y/n] "
+msgstr ""
+
+#: src/easy_installer/cli.py:1050 src/easy_installer/cli.py:1749
+#: src/easy_installer/cli.py:2155 src/easy_installer/cli.py:2358
+#: src/easy_installer/cli.py:2391
+msgid "You may be asked for your password."
+msgstr ""
+
+#: src/easy_installer/cli.py:1064
+#, python-brace-format
+msgid "Ready to install {name} next to the installed version"
+msgstr ""
+
+#: src/easy_installer/cli.py:1066
+#, python-brace-format
+msgid "Ready to go back to the previous version of {name}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1068
+#, python-brace-format
+msgid "Ready to update {name}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1070
+#, python-brace-format
+msgid "Ready to install {name} again"
+msgstr ""
+
+#: src/easy_installer/cli.py:1072
+#, python-brace-format
+msgid "Ready to install an older version of {name}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1073
+#, python-brace-format
+msgid "Ready to install {name}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1083
+#, python-brace-format
+msgid "Version {old} is replaced by the kept version {new}."
+msgstr ""
+
+#: src/easy_installer/cli.py:1084
+#, python-brace-format
+msgid "Version {old} is kept, so you can switch back."
+msgstr ""
+
+#: src/easy_installer/cli.py:1087
+msgid "The installed copy of this app will be replaced by this file."
+msgstr ""
+
+#: src/easy_installer/cli.py:1088
+#, python-brace-format
+msgid "Version {old} is installed and will be replaced by {new}."
+msgstr ""
+
+#: src/easy_installer/cli.py:1090
+#, python-brace-format
+msgid "Version {old} is installed and will be replaced by the older version {new}."
+msgstr ""
+
+#: src/easy_installer/cli.py:1092
+msgid "This version is already installed. It will be installed again."
+msgstr ""
+
+#: src/easy_installer/cli.py:1097
+msgid "is already in the right place"
+msgstr ""
+
+#: src/easy_installer/cli.py:1100
+msgid "is kept where it is (the app is unpacked from it)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1101
+msgid "is deleted once the app is unpacked"
+msgstr ""
+
+#: src/easy_installer/cli.py:1103
+msgid "is kept where it is (a copy is installed)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1104
+msgid "is moved to the app file location above"
+msgstr ""
+
+#: src/easy_installer/cli.py:1116
+#, python-brace-format
+msgid "{version} is kept for {n} day, so you can go back to it"
+msgid_plural "{version} is kept for {n} days, so you can go back to it"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1119
+#, python-brace-format
+msgid "it is kept for {n} day, so you can go back to it"
+msgid_plural "it is kept for {n} days, so you can go back to it"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1122
+msgid "is replaced and not kept"
+msgstr ""
+
+#: src/easy_installer/cli.py:1130
+#, python-brace-format
+msgid "a separate app called \"{name}\"; version {version} stays installed as well"
+msgstr ""
+
+#: src/easy_installer/cli.py:1140
+#, python-brace-format
+msgid "To keep version {version} and install this one next to it, add --keep-both."
+msgstr ""
+
+#: src/easy_installer/cli.py:1145
+msgid "--keep-both is not needed: there is no other version of this app to keep."
+msgstr ""
+
+#: src/easy_installer/cli.py:1148
+msgid "--keep-both is not used: this very file is already installed."
+msgstr ""
+
+#: src/easy_installer/cli.py:1154
+msgid "allow it with a system permission (asks for your password once)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1156
+msgid "start the app without its security sandbox"
+msgstr ""
+
+#: src/easy_installer/cli.py:1163 src/easy_installer/cli.py:1441
+#, python-brace-format
+msgid "{size} (unpacked: {unpacked})"
+msgstr ""
+
+#: src/easy_installer/cli.py:1171 src/easy_installer/cli.py:1228
+#: src/easy_installer/cli.py:2557
+msgid "App folder:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1172 src/easy_installer/cli.py:1229
+#: src/easy_installer/cli.py:2558
+msgid "Program:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1173 src/easy_installer/cli.py:1231
+#: src/easy_installer/cli.py:2559
+msgid "App file:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1181 src/easy_installer/cli.py:2321
+#, python-brace-format
+msgid "{scope} (asks for your password)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1185 src/easy_installer/cli.py:1390
+#: src/easy_installer/cli.py:1437 src/easy_installer/cli.py:2575
+msgid "Version:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1186 src/easy_installer/cli.py:1394
+#: src/easy_installer/cli.py:1441
+msgid "Size:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1187 src/easy_installer/cli.py:2327
+msgid "Install for:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1188
+msgid "Installed as:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1190
+msgid "Original file:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1191 src/easy_installer/cli.py:2328
+msgid "Change:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1192 src/easy_installer/cli.py:2592
+msgid "Previous version:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1193 src/easy_installer/cli.py:1403
+#: src/easy_installer/cli.py:1452 src/easy_installer/cli.py:2589
+msgid "Downloaded from:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1194 src/easy_installer/cli.py:1404
+#: src/easy_installer/cli.py:2590
+msgid "Signature:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1196 src/easy_installer/cli.py:2329
+#: src/easy_installer/cli.py:2593
+msgid "Sandbox:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1197 src/easy_installer/cli.py:2594
+msgid "Start mode:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1197 src/easy_installer/cli.py:2594
+msgid "unpacks itself on every start (a little slower)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1202 src/easy_installer/cli.py:1238
+#: src/easy_installer/cli.py:1412 src/easy_installer/cli.py:1457
+#: src/easy_installer/cli.py:1774 src/easy_installer/cli.py:2092
+#: src/easy_installer/cli.py:2333 src/easy_installer/cli.py:2371
+msgid "Please note:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1209 src/easy_installer/gui/install_dialog.py:403
+msgid "Only install apps from sources you trust."
+msgstr ""
+
+#: src/easy_installer/cli.py:1224
+#, python-brace-format
+msgid "{name} is installed."
+msgstr ""
+
+#: src/easy_installer/cli.py:1225 src/easy_installer/gui/install_dialog.py:895
+msgid "You can find it in your app menu and search."
+msgstr ""
+
+#: src/easy_installer/cli.py:1234
+msgid "Start it:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1235
+msgid "Remove it:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1360
+#, python-brace-format
+msgid "version {version} ({scope})"
+msgstr ""
+
+#: src/easy_installer/cli.py:1382 src/easy_installer/cli.py:1429
+#, python-brace-format
+msgid "{arch} (this computer: {host})"
+msgstr ""
+
+#: src/easy_installer/cli.py:1384
+#, python-brace-format
+msgid "AppImage type {type}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1385 src/easy_installer/cli.py:2494
+#: src/easy_installer/gui/details_dialog.py:120
+msgid "AppImage"
+msgstr ""
+
+#: src/easy_installer/cli.py:1387
+msgid "no, it unpacks itself on every start (FUSE is missing)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1389 src/easy_installer/cli.py:1436
+msgid "Description:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1391 src/easy_installer/cli.py:1438
+#: src/easy_installer/cli.py:2574
+msgid "App ID:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1392 src/easy_installer/cli.py:1439
+msgid "Categories:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1393 src/easy_installer/cli.py:1440
+msgid "File:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1395 src/easy_installer/cli.py:1443
+msgid "SHA-256:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1396 src/easy_installer/cli.py:1444
+msgid "Format:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1397 src/easy_installer/cli.py:1447
+#: src/easy_installer/cli.py:2581
+msgid "Menu entry:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1397 src/easy_installer/cli.py:1398
+#: src/easy_installer/cli.py:1448 src/easy_installer/cli.py:1449
+msgid "none"
+msgstr ""
+
+#: src/easy_installer/cli.py:1398 src/easy_installer/cli.py:1449
+msgid "Icon:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1399 src/easy_installer/cli.py:1450
+msgid "Electron app:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1400 src/easy_installer/cli.py:1451
+msgid "Terminal app:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1401
+msgid "Update info:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1402
+msgid "Updates from:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1405 src/easy_installer/cli.py:2591
+msgid "not signed (most apps are not)"
+msgstr ""
+
+#: src/easy_installer/cli.py:1406
+msgid "Starts directly:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1407
+msgid "Sandbox fix needed:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1408 src/easy_installer/cli.py:1453
+msgid "Installed:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1444
+#, python-brace-format
+msgid "app archive, {arch}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1445
+msgid "Top folder:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1446
+msgid "Programs:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1495
+msgid "App file missing"
+msgstr ""
+
+#: src/easy_installer/cli.py:1497
+msgid "Menu entry missing"
+msgstr ""
+
+#: src/easy_installer/cli.py:1498
+msgid "OK"
+msgstr ""
+
+#: src/easy_installer/cli.py:1525
+msgid "new version"
+msgstr ""
+
+#: src/easy_installer/cli.py:1537 src/easy_installer/cli.py:1985
+msgid "No apps installed yet."
+msgstr ""
+
+#: src/easy_installer/cli.py:1538
+#, python-brace-format
+msgid "Install one with: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1551 src/easy_installer/cli.py:1924
+#: src/easy_installer/cli.py:2222
+msgid "NAME"
+msgstr ""
+
+#: src/easy_installer/cli.py:1551 src/easy_installer/cli.py:1924
+#: src/easy_installer/gui/application.py:72
+msgid "ID"
+msgstr ""
+
+#: src/easy_installer/cli.py:1551
+msgid "VERSION"
+msgstr ""
+
+#: src/easy_installer/cli.py:1551 src/easy_installer/cli.py:1924
+#: src/easy_installer/cli.py:2222
+msgid "FOR"
+msgstr ""
+
+#: src/easy_installer/cli.py:1551 src/easy_installer/cli.py:1924
+msgid "SIZE"
+msgstr ""
+
+#: src/easy_installer/cli.py:1551
+msgid "UPDATE"
+msgstr ""
+
+#: src/easy_installer/cli.py:1552
+msgid "STATUS"
+msgstr ""
+
+#: src/easy_installer/cli.py:1559
+#, python-brace-format
+msgid "{n} new version is available. To install it, run: {command}"
+msgid_plural "{n} new versions are available. To install them, run: {command}"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1565
+msgid "Apps with a problem can be repaired by installing them again."
+msgstr ""
+
+#: src/easy_installer/cli.py:1567
+#, python-brace-format
+msgid "To make the menu entry of {name} again, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1594
+#, python-brace-format
+msgid "Did you mean: {ids}?"
+msgstr ""
+
+#: src/easy_installer/cli.py:1596
+#, python-brace-format
+msgid "To see the installed apps and their IDs, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1598
+#, python-brace-format
+msgid "No app with the ID \"{id}\" is installed."
+msgstr ""
+
+#: src/easy_installer/cli.py:1603
+#, python-brace-format
+msgid "{name} is not installed for everyone on this computer, only for you."
+msgstr ""
+
+#: src/easy_installer/cli.py:1604
+msgid "Use --user instead of --system."
+msgstr ""
+
+#: src/easy_installer/cli.py:1606
+#, python-brace-format
+msgid "{name} is not installed just for you, but for everyone on this computer."
+msgstr ""
+
+#: src/easy_installer/cli.py:1607
+msgid "Use --system instead of --user."
+msgstr ""
+
+#: src/easy_installer/cli.py:1614
+#, python-brace-format
+msgid "{name} is installed twice:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1616
+#, python-brace-format
+msgid "{scope} (version {version})"
+msgstr ""
+
+#: src/easy_installer/cli.py:1649 src/easy_installer/cli.py:2619
+#, python-brace-format
+msgid "{name} is installed both just for you and for everyone on this computer."
+msgstr ""
+
+#: src/easy_installer/cli.py:1666 src/easy_installer/cli.py:2604
+msgid "empty"
+msgstr ""
+
+#: src/easy_installer/cli.py:1675 src/easy_installer/cli.py:2450
+#, python-brace-format
+msgid "Looking for the settings and data of {name}…"
+msgstr ""
+
+#: src/easy_installer/cli.py:1682
+#, python-brace-format
+msgid "The settings and data of {name} are kept, because another installation of it still uses them."
+msgstr ""
+
+#: src/easy_installer/cli.py:1686
+#, python-brace-format
+msgid "No settings or data folders of {name} were found."
+msgstr ""
+
+#: src/easy_installer/cli.py:1688
+#, python-brace-format
+msgid "This settings and data folder of {name} was found:"
+msgid_plural "These settings and data folders of {name} were found:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1701
+msgid "Its settings and data folder was moved to the trash:"
+msgid_plural "Its settings and data folders were moved to the trash:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1706
+msgid "If you need them again, you can restore them from the trash."
+msgstr ""
+
+#: src/easy_installer/cli.py:1710
+#, python-brace-format
+msgid "{n} folder could not be moved to the trash:"
+msgid_plural "{n} folders could not be moved to the trash:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1719
+#, python-brace-format
+msgid "Which one do you want to uninstall? [{choices}, Enter = cancel] "
+msgstr ""
+
+#: src/easy_installer/cli.py:1720
+msgid "Add --user or --system to choose which one to uninstall."
+msgstr ""
+
+#: src/easy_installer/cli.py:1726
+msgid "Also move this folder to the trash? [y/N] "
+msgid_plural "Also move these folders to the trash? [y/N] "
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1732
+msgid "The app will be removed, and the folders listed above will be moved to the trash."
+msgstr ""
+
+#: src/easy_installer/cli.py:1735
+msgid "Anything it saved in its own folder is moved to the trash, too."
+msgstr ""
+
+#: src/easy_installer/cli.py:1737
+#: src/easy_installer/gui/uninstall_dialog.py:102
+msgid "The app will be removed. Anything it saved in its own folder is moved to the trash. Your other personal files and settings are kept."
+msgstr ""
+
+#: src/easy_installer/cli.py:1741
+#: src/easy_installer/gui/uninstall_dialog.py:107
+msgid "The app will be removed. Your personal files and settings are kept."
+msgstr ""
+
+#: src/easy_installer/cli.py:1742
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? [y/N] "
+msgstr ""
+
+#: src/easy_installer/cli.py:1760
+#, python-brace-format
+msgid "To uninstall {name} without the administrator password, add --keep-permission. Only the special permission it needed then stays on this computer."
+msgstr ""
+
+#: src/easy_installer/cli.py:1765
+#, python-brace-format
+msgid "{name} was uninstalled."
+msgstr ""
+
+#: src/easy_installer/cli.py:1770
+msgid "Your other personal files and settings were kept."
+msgstr ""
+
+#: src/easy_installer/cli.py:1772
+msgid "Your personal files and settings were kept."
+msgstr ""
+
+#: src/easy_installer/cli.py:1812
+#, python-brace-format
+msgid "It was installed from an archive and is not updated automatically. To update it, install the archive of the new version: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1816
+msgid "It is a copy that was kept next to another version, so it stays at its version and is not updated."
+msgstr ""
+
+#: src/easy_installer/cli.py:1818
+msgid "It does not say where its new versions are published, so it cannot be checked for updates."
+msgstr ""
+
+#: src/easy_installer/cli.py:1876 src/easy_installer/gui/window.py:409
+#: src/easy_installer/gui/window.py:411
+msgid "Checking for updates…"
+msgstr ""
+
+#: src/easy_installer/cli.py:1924
+msgid "INSTALLED"
+msgstr ""
+
+#: src/easy_installer/cli.py:1924
+msgid "AVAILABLE"
+msgstr ""
+
+#: src/easy_installer/cli.py:1924
+msgid "FROM"
+msgstr ""
+
+#: src/easy_installer/cli.py:1934
+msgid "Could not be checked:"
+msgstr ""
+
+#: src/easy_installer/cli.py:1935
+#, python-brace-format
+msgid "{name}: {problem}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1944
+#, python-brace-format
+msgid "{name} is up to date (version {version})."
+msgstr ""
+
+#: src/easy_installer/cli.py:1947
+#, python-brace-format
+msgid "{n} app is up to date."
+msgid_plural "{n} apps are up to date."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:1959
+#, python-brace-format
+msgid "Not checked, because they do not say where their new versions are published: {names}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1964
+#, python-brace-format
+msgid "Not checked, because they were installed from an archive: {names}. To update one, install the archive of its new version: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:1987
+msgid "None of your apps says where its new versions are published, so Easy Installer cannot check them for updates."
+msgstr ""
+
+#: src/easy_installer/cli.py:2003 src/easy_installer/cli.py:2525
+#, python-brace-format
+msgid "To install it, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2005
+#, python-brace-format
+msgid "To install them, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2061
+msgid "The installation has already started and is finished first…"
+msgstr ""
+
+#: src/easy_installer/cli.py:2083
+#, python-brace-format
+msgid "{name} was updated to version {version}."
+msgstr ""
+
+#: src/easy_installer/cli.py:2088
+#, python-brace-format
+msgid "The previous version is kept for {n} day. To go back to it, run: {command}"
+msgid_plural "The previous version is kept for {n} days. To go back to it, run: {command}"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:2111
+msgid "Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/cli.py:2112 src/easy_installer/cli.py:2141
+#, python-brace-format
+msgid "{name} was not changed."
+msgstr ""
+
+#: src/easy_installer/cli.py:2124
+#, python-brace-format
+msgid "To decide yourself, run the update without -y: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2127
+msgid "Careful:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2132
+msgid "Install this update anyway? [y/N] "
+msgstr ""
+
+#: src/easy_installer/cli.py:2152
+#, python-brace-format
+msgid "Updating {name} from version {old} to {new}…"
+msgstr ""
+
+#: src/easy_installer/cli.py:2162
+msgid "Stopping the download…"
+msgstr ""
+
+#: src/easy_installer/cli.py:2192
+#, python-brace-format
+msgid "Cancelled. {name} was not changed."
+msgstr ""
+
+#: src/easy_installer/cli.py:2205
+msgid "updated"
+msgstr ""
+
+#: src/easy_installer/cli.py:2206
+msgid "failed"
+msgstr ""
+
+#: src/easy_installer/cli.py:2207
+msgid "cancelled"
+msgstr ""
+
+#: src/easy_installer/cli.py:2208
+msgid "skipped"
+msgstr ""
+
+#: src/easy_installer/cli.py:2209
+msgid "could not be checked"
+msgstr ""
+
+#: src/easy_installer/cli.py:2210
+msgid "not updated"
+msgstr ""
+
+#: src/easy_installer/cli.py:2211
+msgid "up to date"
+msgstr ""
+
+#: src/easy_installer/cli.py:2221
+msgid "Summary:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2222
+msgid "BEFORE"
+msgstr ""
+
+#: src/easy_installer/cli.py:2222
+msgid "NOW"
+msgstr ""
+
+#: src/easy_installer/cli.py:2222
+msgid "RESULT"
+msgstr ""
+
+#: src/easy_installer/cli.py:2252
+msgid "Install this update? [Y/n] "
+msgstr ""
+
+#: src/easy_installer/cli.py:2253
+#, python-brace-format
+msgid "Install {n} update? [Y/n] "
+msgid_plural "Install these {n} updates? [Y/n] "
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:2275
+msgid "Name the apps to update, or use --all - not both."
+msgstr ""
+
+#: src/easy_installer/cli.py:2278
+msgid "To install updates with --json, add -y: there is no way to ask questions then."
+msgstr ""
+
+#: src/easy_installer/cli.py:2301
+#, python-brace-format
+msgid "kept since {date}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2308
+#, python-brace-format
+msgid "Keeping the replaced version is turned off. To turn it on, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2310
+#, python-brace-format
+msgid "After an update, the replaced version is kept for {n} day."
+msgid_plural "After an update, the replaced version is kept for {n} days."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:2325
+msgid "Installed now:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2326
+msgid "Go back to:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2339
+#, python-brace-format
+msgid "Which one do you want to take back to its previous version? [{choices}, Enter = cancel] "
+msgstr ""
+
+#: src/easy_installer/cli.py:2341
+msgid "Add --user or --system to choose which one to take back."
+msgstr ""
+
+#: src/easy_installer/cli.py:2346 src/easy_installer/core/installer.py:2867
+#, python-brace-format
+msgid "There is no previous version of {name} to go back to."
+msgstr ""
+
+#: src/easy_installer/cli.py:2363
+#, python-brace-format
+msgid "{name} is back at version {version}."
+msgstr ""
+
+#: src/easy_installer/cli.py:2366
+#, python-brace-format
+msgid "Version {version} is kept. To switch back to it, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2382
+#, python-brace-format
+msgid "Which one do you want to repair? [{choices}, Enter = cancel] "
+msgstr ""
+
+#: src/easy_installer/cli.py:2383
+msgid "Add --user or --system to choose which one to repair."
+msgstr ""
+
+#: src/easy_installer/cli.py:2387 src/easy_installer/cli.py:2842
+#, python-brace-format
+msgid "The app file of {name} is missing: {path}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2389 src/easy_installer/cli.py:2844
+msgid "Install the app again to repair it."
+msgstr ""
+
+#: src/easy_installer/cli.py:2394
+#, python-brace-format
+msgid "{name} was repaired."
+msgstr ""
+
+#: src/easy_installer/cli.py:2395
+msgid "Its menu entry and icon were made again."
+msgstr ""
+
+#: src/easy_installer/cli.py:2493
+msgid "portable app, unpacked from an archive into its own folder"
+msgstr ""
+
+#: src/easy_installer/cli.py:2500
+msgid "not checked (the app was installed from an archive)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2502
+msgid "never (this copy stays at its version)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2505
+msgid "not checked (the app does not say where its new versions are published)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2506
+#, python-brace-format
+msgid "from {source}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2509
+#, python-brace-format
+msgid "last checked {time}, but that check failed (to see why, run: {command})"
+msgstr ""
+
+#: src/easy_installer/cli.py:2513
+#, python-brace-format
+msgid "last checked {time}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2521
+#, python-brace-format
+msgid "{version} is available"
+msgstr ""
+
+#: src/easy_installer/cli.py:2523
+#, python-brace-format
+msgid "{version} is available ({size})"
+msgstr ""
+
+#: src/easy_installer/cli.py:2535
+#, python-brace-format
+msgid "{version} (its files are gone)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2539
+#, python-brace-format
+msgid "{version}, deleted the next time an app is installed or updated for everyone"
+msgstr ""
+
+#: src/easy_installer/cli.py:2542
+#, python-brace-format
+msgid "{version}, kept until {date}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2545
+#, python-brace-format
+msgid "To go back to it, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2552
+#, python-brace-format
+msgid "{id} (this copy was kept next to another version)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2564
+msgid "allowed with a system permission"
+msgstr ""
+
+#: src/easy_installer/cli.py:2566
+msgid "started without its security sandbox"
+msgstr ""
+
+#: src/easy_installer/cli.py:2576
+msgid "Installed for:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2577
+msgid "Kind:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2578
+msgid "Copy of:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2579
+msgid "Status:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2582
+msgid "App size:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2583
+msgid "Installed on:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2584
+msgid "Last changed:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2586
+msgid "Installed from:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2587
+msgid "Updates:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2588
+msgid "New version:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2599
+msgid "No settings or data folders were found."
+msgstr ""
+
+#: src/easy_installer/cli.py:2601
+msgid "Settings and data:"
+msgstr ""
+
+#: src/easy_installer/cli.py:2604
+#, python-brace-format
+msgid "Together: {size}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2606
+msgid "Another installation of this app uses them, too."
+msgstr ""
+
+#: src/easy_installer/cli.py:2608
+#, python-brace-format
+msgid "They are kept when the app is uninstalled. To move them to the trash as well, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2621
+msgid "Add --user or --system to choose which one to show."
+msgstr ""
+
+#: src/easy_installer/cli.py:2678
+#, python-brace-format
+msgid "{key} must be yes or no."
+msgstr ""
+
+#: src/easy_installer/cli.py:2681
+#, python-brace-format
+msgid "{key} must be a whole number from {low} to {high}."
+msgstr ""
+
+#: src/easy_installer/cli.py:2694 src/easy_installer/gui/uninstall_dialog.py:45
+msgid "Settings"
+msgstr ""
+
+#: src/easy_installer/cli.py:2694
+#, python-brace-format
+msgid "(saved in {path})"
+msgstr ""
+
+#: src/easy_installer/cli.py:2702
+#, python-brace-format
+msgid "To change a setting, run: {command}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2712
+#, python-brace-format
+msgid "{n} previous version was kept longer than that and was deleted."
+msgid_plural "{n} previous versions were kept longer than that and were deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:2716
+msgid "From now on, the replaced version of an app is not kept after an update."
+msgstr ""
+
+#: src/easy_installer/cli.py:2726
+#, python-brace-format
+msgid "There is no setting called \"{key}\"."
+msgstr ""
+
+#: src/easy_installer/cli.py:2727
+#, python-brace-format
+msgid "The settings are: {keys}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2740
+msgid "The setting could not be saved."
+msgstr ""
+
+#: src/easy_installer/cli.py:2741
+#, python-brace-format
+msgid "Please check that you may write to {path}."
+msgstr ""
+
+#: src/easy_installer/cli.py:2746
+#, python-brace-format
+msgid "{key} is now {value}."
+msgstr ""
+
+#: src/easy_installer/cli.py:2859
+#, python-brace-format
+msgid "{name} could not be started."
+msgstr ""
+
+#: src/easy_installer/cli.py:2861 src/easy_installer/gui/window.py:847
+#, python-brace-format
+msgid "Starting {name}…"
+msgstr ""
+
+#: src/easy_installer/cli.py:2882
+#, python-brace-format
+msgid "To fix: sudo apt install {package}"
+msgstr ""
+
+#: src/easy_installer/cli.py:2883
+#, python-brace-format
+msgid "To fix: install the package \"{package}\" with the software manager of your system."
+msgstr ""
+
+#: src/easy_installer/cli.py:2888 src/easy_installer/cli.py:2935
+msgid "not installed"
+msgstr ""
+
+#: src/easy_installer/cli.py:2896
+msgid "unknown Linux system"
+msgstr ""
+
+#: src/easy_installer/cli.py:2900
+msgid "Security sandbox of Electron apps"
+msgstr ""
+
+#: src/easy_installer/cli.py:2902
+msgid "allowed"
+msgstr ""
+
+#: src/easy_installer/cli.py:2905
+msgid "restricted by the system; Easy Installer adds a permission for each app that needs it (asks for your password once)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2914
+msgid "restricted by the system; such apps will be started without their sandbox"
+msgstr ""
+
+#: src/easy_installer/cli.py:2918
+msgid "AppArmor security system"
+msgstr ""
+
+#: src/easy_installer/cli.py:2920
+msgid "not active (nothing to do)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2922
+#, python-brace-format
+msgid "active ({path})"
+msgstr ""
+
+#: src/easy_installer/cli.py:2924
+msgid "active, but its tools are not installed"
+msgstr ""
+
+#: src/easy_installer/cli.py:2929
+msgid "Without it, apps still work but start a little slower."
+msgstr ""
+
+#: src/easy_installer/cli.py:2932
+msgid "Read apps without starting them (unsquashfs)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2934
+msgid "FUSE library for AppImages (libfuse2)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2935
+msgid "installed"
+msgstr ""
+
+#: src/easy_installer/cli.py:2938
+msgid "FUSE mount tool (fusermount)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2941
+msgid "FUSE device (/dev/fuse)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2942
+msgid "available"
+msgstr ""
+
+#: src/easy_installer/cli.py:2942
+msgid "missing"
+msgstr ""
+
+#: src/easy_installer/cli.py:2944
+msgid "To fix: sudo modprobe fuse (or restart the computer)."
+msgstr ""
+
+#: src/easy_installer/cli.py:2948
+msgid "Password prompt for installing for everyone (pkexec)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2951
+msgid "App menu refresh (update-desktop-database)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2955
+msgid "Icon refresh (gtk-update-icon-cache)"
+msgstr ""
+
+#: src/easy_installer/cli.py:2990
+#, python-brace-format
+msgid "Computer: {name}"
+msgstr ""
+
+#: src/easy_installer/cli.py:3001
+#, python-brace-format
+msgid "{n} problem found. See the tips above."
+msgid_plural "{n} problems found. See the tips above."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/cli.py:3004
+msgid "Everything important is ready. Some optional tools are missing (see above)."
+msgstr ""
+
+#: src/easy_installer/cli.py:3006
+msgid "Everything is ready for installing AppImages."
+msgstr ""
+
+#: src/easy_installer/core/appdata.py:510
+msgid "This folder is protected and was left alone."
+msgstr ""
+
+#: src/easy_installer/core/appdata.py:514
+msgid "It could not be moved to the trash, so it was left alone."
+msgstr ""
+
+#: src/easy_installer/core/appdata.py:525
+#: src/easy_installer/core/appdata.py:681
+msgid "It no longer exists."
+msgstr ""
+
+#: src/easy_installer/core/backups.py:196
+#, python-brace-format
+msgid "A folder is in the way where the previous version should be kept: {path}"
+msgstr ""
+
+#: src/easy_installer/core/backups.py:223
+#, python-brace-format
+msgid "{name} has changed its own file in the meantime (it may have updated itself). Please try again."
+msgstr ""
+
+#: src/easy_installer/core/backups.py:237
+#: src/easy_installer/core/backups.py:285
+msgid "The previous version could not be kept."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:71 src/easy_installer/core/inspector.py:567
+#: src/easy_installer/core/inspector.py:589
+#: src/easy_installer/core/squashfs.py:393
+#: src/easy_installer/helper/ops.py:1471 src/easy_installer/helper/ops.py:1975
+msgid "This file is not an AppImage."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:76 src/easy_installer/core/squashfs.py:42
+msgid "The file seems damaged or incomplete. Try downloading it again."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:85 src/easy_installer/core/inspector.py:624
+#: src/easy_installer/core/portable.py:868
+#: src/easy_installer/core/portable.py:1729
+#: src/easy_installer/core/portable.py:1793
+#: src/easy_installer/core/portable.py:2362
+msgid "The file could not be found."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:87 src/easy_installer/core/elf.py:101
+#: src/easy_installer/core/inspector.py:587
+#: src/easy_installer/core/portable.py:1733
+msgid "This is a folder, not an app file."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:90
+msgid "The file could not be opened. You may not have permission to read it."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:93 src/easy_installer/core/elf.py:98
+msgid "The file could not be opened."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:108 src/easy_installer/core/portable.py:1738
+msgid "This file is empty. The download may have failed — try downloading it again."
+msgstr ""
+
+#: src/easy_installer/core/elf.py:224 src/easy_installer/core/inspector.py:546
+#: src/easy_installer/core/portable.py:350
+#: src/easy_installer/core/portable.py:870
+#: src/easy_installer/core/portable.py:1731
+#: src/easy_installer/core/portable.py:1754
+#: src/easy_installer/core/portable.py:2373
+#: src/easy_installer/core/portable.py:2384
+#: src/easy_installer/core/squashfs.py:369
+msgid "The file could not be read."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:538
+#: src/easy_installer/core/inspector.py:625
+#: src/easy_installer/core/installer.py:2519
+#: src/easy_installer/core/portable.py:1746
+#: src/easy_installer/core/portable.py:1794
+#: src/easy_installer/core/portable.py:2379
+msgid "Checking the file…"
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:565
+msgid "This AppImage is packed in a format that Easy Installer cannot read yet."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:579
+msgid "If the app came as a .zip or .tar archive, install that archive instead."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:601
+#, python-brace-format
+msgid "Easy Installer cannot open this kind of file ({kind}) yet. It can install AppImages and apps that come as .zip, .tar.gz, .tar.xz or .tar.bz2 archives. Look on the maker’s website for one of those, for example an AppImage."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:607
+msgid "This is a program, but not an AppImage."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:649
+#: src/easy_installer/core/portable.py:1028
+#: src/easy_installer/core/portable.py:1814
+#: src/easy_installer/gui/install_dialog.py:256
+msgid "Reading app information…"
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:654
+#: src/easy_installer/core/portable.py:1858
+msgid "Looking for the app icon…"
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:671
+#: src/easy_installer/core/installer.py:701
+#: src/easy_installer/core/portable.py:1889
+#, python-brace-format
+msgid "This app is made for a different kind of computer ({arch}). It will probably not start on this one."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:674
+msgid "This app does not include a menu entry. Easy Installer will create one from the file name."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:677
+msgid "This app does not include an icon. A standard icon will be used."
+msgstr ""
+
+#: src/easy_installer/core/inspector.py:685
+#: src/easy_installer/core/installer.py:1883
+#: src/easy_installer/core/installer.py:2332
+#: src/easy_installer/core/installer.py:2548
+#: src/easy_installer/core/installer.py:2719
+#: src/easy_installer/core/installer.py:2760
+#: src/easy_installer/core/portable.py:1912
+#: src/easy_installer/core/portable.py:2343
+#: src/easy_installer/core/updater.py:252
+msgid "Done"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:305
+#: src/easy_installer/core/portable.py:323
+#: src/easy_installer/core/portable.py:2254
+#: src/easy_installer/helper/ops.py:1254 src/easy_installer/helper/ops.py:1480
+msgid "There is not enough free disk space. Please free up some space and try again."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:311
+#: src/easy_installer/core/portable.py:327
+#, python-brace-format
+msgid "Easy Installer is not allowed to change this location: {path}"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:314
+#: src/easy_installer/helper/ops.py:1257
+msgid "Easy Installer is not allowed to change the files it needs to."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:317
+#: src/easy_installer/core/installer.py:1009
+#: src/easy_installer/core/installer.py:2231
+#: src/easy_installer/core/installer.py:2398
+#: src/easy_installer/core/portable.py:330
+#: src/easy_installer/helper/ops.py:1260
+msgid "The app could not be installed because a file could not be copied or saved."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:443
+msgid "This app needs a special permission to start on this computer. You will be asked for your password once to allow it."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:455
+msgid "This computer cannot give the app the special permission it needs, so it will be started without its built-in security sandbox."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:462
+#: src/easy_installer/core/installer.py:1028
+msgid "This app will be started without its built-in security sandbox, because this computer blocks it otherwise."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:466
+#: src/easy_installer/core/installer.py:1025
+msgid "This app may not start, because this computer blocks the security sandbox it needs."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:626
+#, python-brace-format
+msgid "Careful: the installed version of {name} was signed by its maker, but this file is not signed by the same maker. It may come from someone else. Only go on if you trust where you got it."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:636
+msgid "The signature of this file does not match: it was changed after its maker signed it, or it is damaged. Better download it again from the maker's website."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:643
+#, python-brace-format
+msgid "{name} is already installed from a different kind of file. Please uninstall it first, then install this file."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:698
+#: src/easy_installer/core/installer.py:1086
+#, python-brace-format
+msgid "This app is made for a different kind of computer ({arch}) and cannot run on this one ({host})."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:706
+#: src/easy_installer/core/installer.py:746
+#: src/easy_installer/core/installer.py:1091
+msgid "This app has an unusual name that Easy Installer cannot handle."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:777
+#: src/easy_installer/core/installer.py:1126
+#: src/easy_installer/gui/install_dialog.py:737
+#, python-brace-format
+msgid "A newer version ({installed}) is already installed. This file contains the older version {new}."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:781
+#: src/easy_installer/core/installer.py:1129
+msgid "This app is also installed for everyone on this computer."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:783
+msgid "This app is also installed just for you."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:788
+#: src/easy_installer/core/installer.py:1134
+#, python-brace-format
+msgid "Another app called {name} is already installed. This one is added next to it and does not replace it."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:793
+#, python-brace-format
+msgid "{file} is the app file of an app that is already installed, so it stays where it is and a copy is installed."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:802
+#, python-brace-format
+msgid "{name} has changed its own file since Easy Installer last looked at it, so the version that is there now is not kept."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:837
+msgid "A system component (FUSE) is missing, so the app will start a little slower than usual."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:981
+#: src/easy_installer/core/installer.py:2255
+#: src/easy_installer/core/portable.py:2352
+msgid "The program that starts this app was not found in the archive."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:987
+msgid "The name of the program that starts this app uses letters that the app menu cannot show, so it cannot be started from there."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1073
+msgid "Apps that come as an archive can only be installed just for you, not for everyone on this computer."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1077
+msgid "An app that comes as an archive can only replace the version you have. It cannot be installed next to it."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1107
+#: src/easy_installer/core/installer.py:2657
+#: src/easy_installer/core/installer.py:2756
+#: src/easy_installer/core/installer.py:2882
+#: src/easy_installer/core/installer.py:2955
+#: src/easy_installer/core/installer.py:3012
+#: src/easy_installer/core/updater.py:307
+msgid "This app is not installed."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1220
+#: src/easy_installer/helper/ops.py:671
+msgid "The app icon is too large."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1282
+#: src/easy_installer/core/installer.py:2100
+#: src/easy_installer/helper/ops.py:891
+#, python-brace-format
+msgid "A folder is in the way where the app should be installed: {path}"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1323
+#: src/easy_installer/helper/ops.py:591
+#, python-brace-format
+msgid "The file {name} is no longer there. Was it moved or deleted?"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1330
+#: src/easy_installer/core/reconcile.py:183
+#, python-brace-format
+msgid "The file {name} changed after it was checked. Please try again."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1344
+msgid "Preparing the app…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1348
+#: src/easy_installer/core/installer.py:1369
+msgid "Moving the app…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1372
+#: src/easy_installer/core/installer.py:2429
+msgid "Copying the app…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1380
+#: src/easy_installer/core/installer.py:2439
+#: src/easy_installer/helper/ops.py:1460
+#, python-brace-format
+msgid "The file {name} changed while it was being installed. Please try again."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1399
+#: src/easy_installer/core/privileged.py:261
+msgid "The administrator task could not be started."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1590
+msgid "Another installation changed the installed apps in the meantime. Please try again."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1611
+#, python-brace-format
+msgid "The current version of {name} could not be kept, so nothing was changed."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1614
+#: src/easy_installer/helper/ops.py:1328 src/easy_installer/helper/ops.py:1345
+#: src/easy_installer/helper/ops.py:1350 src/easy_installer/helper/ops.py:1799
+#: src/easy_installer/helper/ops.py:1809
+msgid "The previous version could not be kept, so you cannot go back to it."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1753
+#: src/easy_installer/core/installer.py:2649
+msgid "Waiting for another installation to finish…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1788
+#: src/easy_installer/core/installer.py:2260
+msgid "Adding the app icon…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1794
+#: src/easy_installer/core/installer.py:2268
+msgid "Adding the app to the menu…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1809
+msgid "Asking for permission to let the app use its security sandbox…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1820
+#: src/easy_installer/core/installer.py:2500
+#: src/easy_installer/helper/ops.py:1836
+msgid "The app could not get the special permission it needs, so it will be started without its built-in security sandbox."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1823
+#: src/easy_installer/core/installer.py:2273
+msgid "Saving…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1873
+#: src/easy_installer/core/installer.py:2323
+#: src/easy_installer/core/installer.py:2546
+#, python-brace-format
+msgid "The app was installed, but the original file could not be deleted. You can delete {name} yourself."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1876
+#: src/easy_installer/core/installer.py:2326
+#: src/easy_installer/core/installer.py:2711
+msgid "Updating the app menu…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:1997
+msgid "This app's folder is incomplete. Please install the app again."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2127
+#, python-brace-format
+msgid "Some files in the folder of {name} were changed after it was installed. The old folder is in the trash, in case you need them."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2130
+#, python-brace-format
+msgid "Some files in the folder of {name} were changed after it was installed, so the old folder was kept: {path}"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2175
+#: src/easy_installer/core/installer.py:2886
+#, python-brace-format
+msgid "The kept previous version of {name} cannot be used any more."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2524
+msgid "Installing for everyone on this computer…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2532
+#: src/easy_installer/core/privileged.py:284
+#: src/easy_installer/core/privileged.py:293
+#: src/easy_installer/helper/main.py:150 src/easy_installer/helper/main.py:159
+#: src/easy_installer/helper/ops.py:536 src/easy_installer/helper/ops.py:1582
+msgid "The administrator task failed unexpectedly."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2604
+#, python-brace-format
+msgid "The folder {path} was not removed, because Easy Installer cannot be sure that it belongs to {name}. You can delete it yourself."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2634
+#, python-brace-format
+msgid "The folder of {name} was moved to the trash, because files were saved in it after it was installed. You can get them back from there."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2638
+#, python-brace-format
+msgid "The folder {path} was kept, because files were saved in it after {name} was installed. You can delete it yourself."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2664
+#, python-brace-format
+msgid "The special permission that {name} needed was left on this computer, because only an administrator can remove it."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2669
+msgid "Removing the app's special permission…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2674
+#, python-brace-format
+msgid "The special permission that {name} needed could not be removed."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2677
+#, python-brace-format
+msgid "Removing {name}…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2708
+#: src/easy_installer/helper/ops.py:1895
+#, python-brace-format
+msgid "Some files of {name} could not be removed."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2757
+msgid "Removing the app for everyone on this computer…"
+msgstr ""
+
+#: src/easy_installer/core/installer.py:2938
+#, python-brace-format
+msgid "{name} cannot be repaired automatically. Please install it again."
+msgstr ""
+
+#: src/easy_installer/core/installer.py:3026
+#, python-brace-format
+msgid "The previous version of {name} could not be deleted."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:275
+msgid "This file is not an app archive that Easy Installer can open."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:280
+msgid "This archive does not look like an app. Easy Installer could not find a program to start in it."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:286
+#, python-brace-format
+msgid "This archive contains an installer ({program}), not an app that is ready to use. Unpack the archive and follow the instructions that came with it, or look for an AppImage of this app."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:293
+msgid "This archive contains the source code of a program, not an app that is ready to use. Look on the maker’s website for a version for Linux that is ready to use, for example an AppImage."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:300
+#, python-brace-format
+msgid "This archive contains the AppImage “{name}”. Please unpack the archive first (in Files: right-click it and choose “Extract”), then install “{name}” with Easy Installer."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:307
+msgid "This archive is built in an unsafe way, so Easy Installer will not unpack it."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:311
+msgid "This archive is too large for Easy Installer to unpack."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:315
+msgid "The archive was changed after it was opened. Please try again."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:342
+msgid "This archive is packed in a way that Easy Installer cannot read yet."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:803
+msgid "This archive is protected with a password. Easy Installer cannot open it."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:1894
+#, python-brace-format
+msgid "The menu entry in this archive starts “{program}”, which is not in it. Easy Installer is not sure which program starts this app. Please check the chosen program before you install it."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:1900
+msgid "Easy Installer is not sure which program starts this app. Please check the chosen program before you install it."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:1905
+msgid "This looks like a tool for the terminal, not an app with a window. Its entry in the app menu may seem to do nothing."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:1908
+msgid "Easy Installer could not find an icon for this app. A standard icon will be used."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:2208
+msgid "The app could not be unpacked because its folder already exists."
+msgstr ""
+
+#: src/easy_installer/core/portable.py:2295
+msgid "Unpacking the app…"
+msgstr ""
+
+#: src/easy_installer/core/privileged.py:87
+msgid "Administrator tasks are not possible on this computer because the password prompt (pkexec) is not installed."
+msgstr ""
+
+#: src/easy_installer/core/privileged.py:132
+#: src/easy_installer/helper/main.py:143
+msgid "The part of Easy Installer that works for everyone on this computer belongs to another version of Easy Installer. Nothing was changed. Please restart Easy Installer, or install it again."
+msgstr ""
+
+#: src/easy_installer/core/privileged.py:219
+msgid "The administrator task took too long and was stopped."
+msgstr ""
+
+#: src/easy_installer/core/privileged.py:239
+#: src/easy_installer/core/privileged.py:245
+msgid "Administrator tasks are turned off in this environment."
+msgstr ""
+
+#: src/easy_installer/core/privileged.py:253
+msgid "Something went wrong while preparing the administrator task."
+msgstr ""
+
+#: src/easy_installer/core/privileged.py:277
+msgid "You are not allowed to do this, or the password was not accepted."
+msgstr ""
+
+#: src/easy_installer/core/registry.py:391
+msgid "Another installation is running right now. Please try again in a moment."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:391
+msgid "The signature could not be checked because GnuPG is not installed."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:395
+msgid "The signature could not be checked."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:399
+msgid "The file does not include the signer's key, so the signature could not be checked."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:403
+msgid "The key inside the file does not belong to its signature."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:407
+msgid "The signature matches, but the signer's key has expired."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:411
+msgid "The signature does not cover the contents of the app."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:415
+msgid "The file was changed after it was signed, or it is damaged."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:419
+msgid "The signer has withdrawn the key this file was signed with."
+msgstr ""
+
+#: src/easy_installer/core/signature.py:423
+msgid "The signature inside the file could not be read."
+msgstr ""
+
+#: src/easy_installer/core/squashfs.py:120
+msgid "A system component needed to read apps (squashfs-tools) is missing."
+msgstr ""
+
+#: src/easy_installer/core/squashfs.py:138
+#: src/easy_installer/core/squashfs.py:286
+msgid "Reading the app took too long. The file may be damaged."
+msgstr ""
+
+#: src/easy_installer/core/squashfs.py:142
+msgid "A system component needed to read apps (squashfs-tools) could not be started."
+msgstr ""
+
+#: src/easy_installer/core/squashfs.py:260
+msgid "The app file could not be prepared for reading. Check that you are allowed to change it."
+msgstr ""
+
+#: src/easy_installer/core/squashfs.py:274
+msgid "The app could not be read. It may be damaged or made for a different kind of computer."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:236
+#, python-brace-format
+msgid "Checking {name}…"
+msgstr ""
+
+#: src/easy_installer/core/updater.py:246
+#: src/easy_installer/core/updates.py:132
+#: src/easy_installer/gui/details_dialog.py:567
+msgid "The update information of this app could not be read."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:284
+#: src/easy_installer/core/updater.py:310
+msgid "This app cannot be updated automatically."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:295
+#, python-brace-format
+msgid "{name} is already being updated. Please wait until that is finished."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:299
+msgid "The update could not be saved. Please check that there is enough free space."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:332
+#, python-brace-format
+msgid "{name} is now at version {version}, so this update is no longer needed."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:335
+#, python-brace-format
+msgid "{name} is already up to date."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:346
+msgid "The downloaded file is not a working app. Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:353
+#, python-brace-format
+msgid "The downloaded file is a different app, not {name}. Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:358
+#, python-brace-format
+msgid "The downloaded update is made for a different kind of computer ({arch}) and cannot run on this one ({host}). Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:372
+#, python-brace-format
+msgid "The downloaded file contains version {new}, which is older than the installed version {installed}. Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:377
+#, python-brace-format
+msgid "The installed version of {name} was signed by its maker, but this update is not signed by the same maker. Nothing was changed."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:436
+#: src/easy_installer/core/updater.py:445
+#: src/easy_installer/core/updater.py:456
+#: src/easy_installer/core/updates.py:1506
+msgid "The download was cancelled."
+msgstr ""
+
+#: src/easy_installer/core/updater.py:447
+msgid "The update could not be downloaded."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:136
+msgid "No update information was found for this app."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:141
+msgid "The update would come from an address that is not secure, so Easy Installer did not use it."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:270
+msgid "The update is not an AppImage file, so Easy Installer cannot install it."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:816
+msgid "The server did not answer in time. Please try again later."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:818
+#, python-brace-format
+msgid "A secure connection to {host} could not be set up."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:821
+msgid "The internet could not be reached. Please check your connection and try again."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:916
+msgid "Too many update checks were made in a short time. Please try again later."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:919
+#, python-brace-format
+msgid "Too many update checks were made in a short time. Please try again in about {minutes} minute."
+msgid_plural "Too many update checks were made in a short time. Please try again in about {minutes} minutes."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/core/updates.py:940
+#: src/easy_installer/core/updates.py:1540
+msgid "The update server has a problem right now. Please try again later."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:943
+msgid "The update server did not allow Easy Installer to look for updates."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:944
+msgid "The update server gave an answer that Easy Installer does not understand."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1510
+msgid "The download was interrupted. Please check your connection and try again."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1516
+msgid "The downloaded file is incomplete or was changed on the way, so it was not installed. Please try again later."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1523
+#: src/easy_installer/core/updates.py:1568
+msgid "There is not enough free space to download the update."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1524
+msgid "The update could not be saved on this computer."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1534
+msgid "The server is busy and refused the download. Please try again later."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1536
+msgid "The update is no longer on the server. Please check for updates again."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1541
+msgid "The update could not be downloaded because the server refused it."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1556
+msgid "The update is too large to be downloaded."
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1669
+#, python-brace-format
+msgid "Downloading… {done} of {total}"
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1670
+#, python-brace-format
+msgid "Downloading… {done}"
+msgstr ""
+
+#: src/easy_installer/core/updates.py:1765
+#: src/easy_installer/gui/update_dialog.py:213
+msgid "Starting the download…"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:40
+msgid "App file is missing"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:42
+msgid "Missing from the app menu"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:45
+#: src/easy_installer/gui/details_dialog.py:119
+msgid "Portable app"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:47
+#: src/easy_installer/gui/details_dialog.py:189
+#: src/easy_installer/gui/details_dialog.py:361
+#: src/easy_installer/gui/dialog_common.py:182
+#, python-brace-format
+msgid "Version {version}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:57
+#, python-brace-format
+msgid "Update to {version}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:58
+#: src/easy_installer/gui/details_dialog.py:512
+msgid "Update"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:63
+#, python-brace-format
+msgid "Update {name} to version {version}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:65
+#, python-brace-format
+msgid "Install the new version of {name}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:100
+#, python-brace-format
+msgid "Expected at {path}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:117
+msgid "Portable"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:119
+msgid "Unpacked from an archive. It is not checked for updates."
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:148
+msgid "More Actions"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:151
+#, python-brace-format
+msgid "More actions for {name}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:170
+msgid "Remove"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:170
+msgid "Remove it from this list"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:172 src/easy_installer/gui/app_row.py:189
+#: src/easy_installer/gui/details_dialog.py:461
+#: src/easy_installer/gui/details_dialog.py:463
+#: src/easy_installer/gui/window.py:1354
+msgid "Repair"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:172
+msgid "Add it to the app menu again"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:174 src/easy_installer/gui/app_row.py:184
+msgid "Open"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:174
+#, python-brace-format
+msgid "Start {name}"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:186
+#: src/easy_installer/gui/details_dialog.py:387
+#: src/easy_installer/gui/details_dialog.py:598
+msgid "Show in Files"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:187 src/easy_installer/gui/window.py:1111
+msgid "Details"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:193
+#: src/easy_installer/gui/details_dialog.py:472
+msgid "Remove from List…"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:195
+#: src/easy_installer/gui/details_dialog.py:472
+msgid "Uninstall…"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:37
+msgid "Install an app"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:38
+msgid "Check for updates"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:39
+#: src/easy_installer/gui/preferences_dialog.py:72
+msgid "Preferences"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:40
+msgid "Close the dialog or window"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:41
+msgid "Quit"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:42
+msgid "Main menu"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:43
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:56
+#: src/easy_installer/gui/preferences_dialog.py:79
+msgid "General"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:72
+msgid "Ask whether to uninstall the app with this ID"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:73
+msgid "[FILE…]"
+msgstr ""
+
+#: src/easy_installer/gui/application.py:74
+msgid "Install AppImage apps like real apps."
+msgstr ""
+
+#: src/easy_installer/gui/common.py:151 src/easy_installer/gui/common.py:169
+msgid "This file cannot be installed"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:153
+msgid "The file seems to be damaged"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:155
+msgid "This app does not work on this computer"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:157
+msgid "The app is not installed"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:159
+msgid "Authentication failed"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:161
+msgid "No connection"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:163
+msgid "The update was cancelled"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:165
+#: src/easy_installer/gui/dialog_common.py:216
+msgid "The update could not be installed"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:167
+msgid "Installation failed"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:169 src/easy_installer/gui/common.py:173
+msgid "Something went wrong"
+msgstr ""
+
+#: src/easy_installer/gui/common.py:174
+msgid "An unexpected problem occurred. The technical details below can help when reporting it."
+msgstr ""
+
+#. Translators: a date as in "29 September 2026" (GLib.DateTime.format codes: %-d day,
+#. %B month name, %Y year), e.g. German "%-d. %B %Y".
+#: src/easy_installer/gui/common.py:205
+#, python-format
+msgid "%-d %B %Y"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:93
+msgid "Not signed (most apps are not)"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:96
+#: src/easy_installer/gui/dialog_common.py:105
+#, python-brace-format
+msgid "Signed with a key named “{signer}”"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:97
+#: src/easy_installer/gui/dialog_common.py:106
+msgid "Signed with a key that has no name"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:100
+#, python-brace-format
+msgid "Key {fingerprint}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:103
+msgid "The signature of this file does not match. The file may have been changed."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:105
+msgid "Signed, but the signature could not be checked."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:111
+#: src/easy_installer/gui/details_dialog.py:382
+msgid "Not known"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:117
+#, python-brace-format
+msgid "Portable app, unpacked from {file}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:131
+msgid "Portable apps are not checked for updates. To update this app, open a newer download of it with Easy Installer."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:135
+#, python-brace-format
+msgid "This copy stays at version {version}. It is never updated."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:137
+msgid "This copy stays as it is. It is never updated."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:140
+msgid "This app does not say where to find new versions. To update it, open a newer download of it with Easy Installer."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:142
+#: src/easy_installer/gui/update_dialog.py:408
+#, python-brace-format
+msgid "From {source}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:155
+#, python-brace-format
+msgid "Last checked on {date}, but that check failed"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:156
+#, python-brace-format
+msgid "Last checked on {date}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:161
+#, python-brace-format
+msgid "Version {version} is available"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:162
+msgid "A new version is available"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:169
+#, python-brace-format
+msgid "Released on {date}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:171
+#, python-brace-format
+msgid "Download size {size}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:189
+#: src/easy_installer/gui/details_dialog.py:434
+msgid "Previous version"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:196
+#, python-brace-format
+msgid "Go back to version {version}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:197
+msgid "Go back to the previous version"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:204
+#, python-brace-format
+msgid "Go back to version {version}?"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:205
+msgid "Go back to the previous version?"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:211
+#, python-brace-format
+msgid "Delete version {version}?"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:212
+msgid "Delete the previous version?"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:226
+msgid "Deleted the next time an app is installed or updated for everyone"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:228
+#, python-brace-format
+msgid "Kept until {date}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:230
+msgid "Deleted the next time Easy Installer starts"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:232
+msgid "Kept on this computer"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:330
+#: src/easy_installer/gui/preferences_dialog.py:81
+msgid "Updates"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:377
+msgid "App"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:378
+msgid "Type"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:382
+msgid "Location"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:384
+#, python-brace-format
+msgid "The app file is missing. It was expected at {path}"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:393
+msgid "App size"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:395
+#: src/easy_installer/gui/uninstall_dialog.py:49
+msgid "Settings and data"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:396
+msgid "Working out the size…"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:404
+msgid "Installed"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:407
+msgid "Last changed"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:411
+msgid "Origin"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:412
+msgid "Downloaded from"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:417
+msgid "Signature"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:435
+msgid "Kept when it was replaced, so you can go back to it."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:439
+msgid "Go Back"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:443
+msgid "Delete Previous Version"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:451
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:454
+msgid "This app changed since it was installed. Repair it to bring its details and its menu entry up to date."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:457
+msgid "Adds the app to the app menu again and refreshes its icon and details."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:460
+msgid "You will be asked for your password."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:493
+msgid "New versions"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:498
+msgid "Check Now"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:521
+#: src/easy_installer/gui/update_dialog.py:562
+#, python-brace-format
+msgid "{name} is up to date"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:527
+msgid "Could not check for updates"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:642
+#, python-brace-format
+msgid "{name} goes back to the version that was kept. The version you have now is kept instead, so you can switch back later. Your settings and files stay as they are."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:646
+#: src/easy_installer/gui/details_dialog.py:676
+#: src/easy_installer/gui/uninstall_dialog.py:111
+msgid "It is installed for everyone on this computer, so you will be asked for your password."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:649
+#: src/easy_installer/gui/details_dialog.py:679
+#: src/easy_installer/gui/install_dialog.py:410
+#: src/easy_installer/gui/uninstall_dialog.py:202
+#: src/easy_installer/gui/uninstall_dialog.py:296
+#: src/easy_installer/gui/update_dialog.py:284
+#: src/easy_installer/gui/update_dialog.py:313
+#: src/easy_installer/gui/window.py:1215
+msgid "_Cancel"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:650
+msgid "_Go Back"
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:673
+#, python-brace-format
+msgid "The previous version of {name} that was kept is deleted. You can no longer go back to it."
+msgstr ""
+
+#: src/easy_installer/gui/details_dialog.py:680
+msgid "_Delete"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:78
+#, python-brace-format
+msgid "Downloaded from {host}"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:103
+msgid "Signed by the same maker as the installed version"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:122
+#, python-brace-format
+msgid "Key fingerprint: {fingerprint}"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:141
+#, python-brace-format
+msgid "Gets updates from {source}"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:159
+msgid "This copy stays at its version and gets no updates"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:169
+#, python-brace-format
+msgid "Version {version} is kept for {days} day, so you can go back to it"
+msgid_plural "Version {version} is kept for {days} days, so you can go back to it"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/dialog_common.py:172
+#, python-brace-format
+msgid "The current version is kept for {days} day, so you can go back to it"
+msgid_plural "The current version is kept for {days} days, so you can go back to it"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/dialog_common.py:180
+#, python-brace-format
+msgid "{old} → {new}"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:183
+msgid "A newer version"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:189
+#, python-brace-format
+msgid "From version {old} to {new}"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:214
+msgid "The update could not be downloaded"
+msgstr ""
+
+#: src/easy_installer/gui/dialog_common.py:237
+#, python-brace-format
+msgid "{done} of {total}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:99
+msgid "Leave a copy in your Home folder"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:100
+#, python-brace-format
+msgid "Leave a copy in the folder “{folder}”"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:105
+msgid "Leave it in your Home folder"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:106
+#, python-brace-format
+msgid "Leave it in the folder “{folder}”"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:127
+#: src/easy_installer/gui/install_dialog.py:783
+msgid "Install App"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:216
+#, python-brace-format
+msgid "Updating {name}…"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:218
+#, python-brace-format
+msgid "Installing {name}…"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:220
+msgid "Getting ready…"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:302
+msgid "Keep both"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:302
+msgid "Both versions will be in your app menu"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:327
+msgid "This archive contains several programs. Choose the one that starts the app."
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:329
+msgid "Program to start"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:335
+msgid "Install for"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:338
+#: src/easy_installer/gui/install_dialog.py:821
+msgid "No password needed"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:342
+msgid "Requires your password"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:358
+msgid "More options"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:359
+msgid "Keep the original file"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:363
+msgid "Security sandbox"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:365
+msgid "Automatic"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:366
+msgid "Allow with system permission (recommended)"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:367
+msgid "Start without sandbox"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:372
+msgid "This app protects itself with a security sandbox, which this computer blocks for apps it does not know (an AppArmor rule on Ubuntu-based systems). “Allow with system permission” asks for your password once and keeps the protection. “Start without sandbox” needs no password, but the app runs less protected."
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:413
+#: src/easy_installer/gui/install_dialog.py:681
+#: src/easy_installer/gui/install_dialog.py:701
+#: src/easy_installer/gui/system_dialog.py:123
+#: src/easy_installer/gui/window.py:734
+msgid "_Install"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:443
+#: src/easy_installer/gui/update_dialog.py:340
+msgid "_Done"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:445
+#: src/easy_installer/gui/update_dialog.py:342
+msgid "_Open App"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:462
+#: src/easy_installer/gui/update_dialog.py:357
+#: src/easy_installer/gui/window.py:723
+msgid "Technical details"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:476
+msgid "_Back"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:478
+#: src/easy_installer/gui/uninstall_dialog.py:307
+#: src/easy_installer/gui/update_dialog.py:373
+#: src/easy_installer/gui/window.py:713 src/easy_installer/gui/window.py:1046
+#: src/easy_installer/gui/window.py:1056 src/easy_installer/gui/window.py:1121
+msgid "_Close"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:583
+#, python-brace-format
+msgid "Version {version} · {size}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:591
+msgid "Keep the archive"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:595
+msgid "Not possible for apps that come as an archive"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:608
+msgid "Not possible on this computer"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:684
+#, python-brace-format
+msgid "Version {old} is installed and will be replaced by {new}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:687
+msgid "The installed copy of this app will be replaced by this version"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:688
+#: src/easy_installer/gui/update_dialog.py:286
+#: src/easy_installer/gui/update_dialog.py:436
+#: src/easy_installer/gui/window.py:1216
+msgid "_Update"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:690
+msgid "This version is already installed. Installing it again can fix problems with it."
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:691
+msgid "_Reinstall"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:694
+#, python-brace-format
+msgid "A newer version ({old}) is installed. It will be replaced by the older version {new}."
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:696
+#, python-brace-format
+msgid "_Go Back to {version}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:698
+msgid "A newer version is installed. It will be replaced by this older one."
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:699
+#: src/easy_installer/gui/install_dialog.py:710
+msgid "_Install Anyway"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:709
+#: src/easy_installer/gui/update_dialog.py:436
+msgid "_Update Anyway"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:717
+#, python-brace-format
+msgid "Replace version {version}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:718
+msgid "Replace the installed version"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:721
+msgid "This newer version takes its place"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:723
+msgid "This older version takes its place"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:725
+msgid "This version takes its place"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:783
+#: src/easy_installer/gui/update_dialog.py:112
+msgid "Update App"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:820
+msgid "Asks for your password once, for a special permission"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:824
+#, python-brace-format
+msgid "The app will be unpacked to {path}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:827
+#, python-brace-format
+msgid "The app stays at {path}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:830
+#, python-brace-format
+msgid "The app will be saved as {path}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:889
+#: src/easy_installer/gui/update_dialog.py:545
+#: src/easy_installer/gui/window.py:236 src/easy_installer/gui/window.py:1223
+#, python-brace-format
+msgid "{name} was updated"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:891
+#, python-brace-format
+msgid "{name} is installed"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:893
+msgid "Everyone on this computer can find it in the app menu and search."
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:920
+#: src/easy_installer/gui/update_dialog.py:590
+#: src/easy_installer/gui/window.py:844
+#, python-brace-format
+msgid "{name} could not be started"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:932
+#, python-brace-format
+msgid "File: {name}"
+msgstr ""
+
+#: src/easy_installer/gui/install_dialog.py:954
+#: src/easy_installer/gui/window.py:1557
+msgid "Please wait until the installation is finished"
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:36
+msgid "Off"
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:37
+#, python-brace-format
+msgid "{count} day"
+msgid_plural "{count} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/preferences_dialog.py:43
+msgid "once a day"
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:45
+msgid "once an hour"
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:48
+#, python-brace-format
+msgid "every {count} day"
+msgid_plural "every {count} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/preferences_dialog.py:49
+#, python-brace-format
+msgid "every {count} hour"
+msgid_plural "every {count} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/preferences_dialog.py:53
+#, python-brace-format
+msgid "When Easy Installer starts, it looks for new versions of your apps, at most {interval}. Nothing is installed without asking you."
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:60
+msgid "Replaced versions are not kept. Versions kept until now are deleted the next time Easy Installer starts - those of apps for everyone the next time an app is installed or updated for everyone."
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:63
+msgid "After an update, the replaced version stays on this computer for a while, so you can go back to it."
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:82
+msgid "Check for updates automatically"
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:89
+msgid "Previous versions"
+msgstr ""
+
+#: src/easy_installer/gui/preferences_dialog.py:91
+msgid "Keep the previous version"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:40
+#: src/easy_installer/gui/system_dialog.py:43
+msgid "Reading AppImages"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:40
+#: src/easy_installer/gui/system_dialog.py:48
+#: src/easy_installer/gui/system_dialog.py:79
+msgid "Ready"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:44
+msgid "A helper tool is missing, so AppImages have to be opened briefly to read them. Installing the “squashfs-tools” package avoids this."
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:48
+#: src/easy_installer/gui/system_dialog.py:51
+msgid "Starting apps"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:52
+msgid "A system component (FUSE) is missing. Apps still work, but start a bit slower."
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:56
+#: src/easy_installer/gui/system_dialog.py:60
+#: src/easy_installer/gui/system_dialog.py:66
+msgid "Apps with a security sandbox"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:57
+msgid "No extra permission needed"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:61
+msgid "This computer blocks app sandboxes by default (AppArmor user namespace restriction). Easy Installer can allow them per app; you will be asked for your password."
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:67
+msgid "This computer blocks app sandboxes and the permission cannot be given here, so such apps will start without their sandbox."
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:71
+#: src/easy_installer/gui/system_dialog.py:75
+msgid "Installing for everyone"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:72
+msgid "Available — asks for your password"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:76
+msgid "Not possible, because the password prompt (pkexec) is not installed."
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:79
+#: src/easy_installer/gui/system_dialog.py:82
+msgid "Updating the app menu"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:83
+msgid "New apps may take a moment to appear in the app menu (update-desktop-database is missing)."
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:109
+msgid "Check This Computer"
+msgstr ""
+
+#: src/easy_installer/gui/system_dialog.py:114
+msgid "What Easy Installer needs to install and start apps on this computer."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:46
+#: src/easy_installer/gui/uninstall_dialog.py:50
+msgid "App data"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:47
+msgid "Temporary files"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:48
+msgid "App state"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:60
+msgid "No settings or data found"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:62
+#, python-brace-format
+msgid "{size} in {count} folder"
+msgid_plural "{size} in {count} folders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:73
+#, python-brace-format
+msgid "Remove {name}?"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:74
+#, python-brace-format
+msgid "Uninstall {name}?"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:83
+msgid "It is also installed for everyone on this computer. That copy stays installed."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:85
+msgid "It is also installed just for you. That copy stays installed."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:87
+msgid "The other installed versions of this app stay installed."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:96
+msgid "The app file is already gone. This removes the app from this list and from the app menu."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:99
+msgid "The app will be removed. Anything it saved in its own folder is moved to the trash. Your other personal files are kept."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:105
+msgid "The app will be removed. Your personal files are kept."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:109
+msgid "The previous version that was kept is removed, too."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:114
+msgid "You will be asked for your password to remove the special permission this app needed."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:161
+#, python-brace-format
+msgid "{name} was removed"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:161
+#, python-brace-format
+msgid "{name} was uninstalled"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:167
+#, python-brace-format
+msgid "{name} was uninstalled, its settings and data are in the trash"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:204
+msgid "_Remove"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:204
+#: src/easy_installer/gui/uninstall_dialog.py:297
+msgid "_Uninstall"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:219
+msgid "Looking for its settings and data…"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:254
+msgid "Also move settings and data to the trash:"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:270
+msgid "Only what you tick is moved. You can get it back from the trash."
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:291
+#, python-brace-format
+msgid "Uninstall {name} without the password?"
+msgstr ""
+
+#: src/easy_installer/gui/uninstall_dialog.py:292
+#, python-brace-format
+msgid "{name} can still be uninstalled. Only the special permission it needed then stays on this computer, because only an administrator can remove it."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:206
+#, python-brace-format
+msgid "Downloading {name} {version}…"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:207
+#, python-brace-format
+msgid "Downloading the update of {name}…"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:209
+#, python-brace-format
+msgid "Installing {name} {version}…"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:210
+#, python-brace-format
+msgid "Installing the update of {name}…"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:214
+msgid "Checking the download…"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:230
+msgid "Cancelling…"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:271
+msgid "_What’s New"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:273
+msgid "Read about this version on the maker’s website"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:324
+msgid "This takes only a moment. Please keep Easy Installer open."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:371
+msgid "_Try Again"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:403
+#, python-brace-format
+msgid "{size} to download"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:412
+msgid "Asks for your password, because the app is installed for everyone on this computer"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:456
+msgid "The website could not be opened"
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:527
+#, python-brace-format
+msgid "Careful: the installed version of {name} was signed by its maker, but this update is not signed by the same maker. It may come from someone else. Only go on if you trust where it comes from."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:548
+#, python-brace-format
+msgid "Version {version} is ready to use."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:549
+msgid "The new version is ready to use."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:607
+#, python-brace-format
+msgid "{name} is no longer installed, so it was not updated."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:612
+#, python-brace-format
+msgid "{name} {version} is still installed and works as before."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:616
+#, python-brace-format
+msgid "{name} is still installed and works as before."
+msgstr ""
+
+#: src/easy_installer/gui/update_dialog.py:653
+#: src/easy_installer/gui/window.py:1559
+msgid "Please wait until the update is finished"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:233
+#, python-brace-format
+msgid "{name} was updated to {version}"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:238
+#, python-brace-format
+msgid "{count} app was updated"
+msgid_plural "{count} apps were updated"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:241
+#, python-brace-format
+msgid "{name} went back to version {version} by itself"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:244
+#, python-brace-format
+msgid "{count} app went back to an older version by itself"
+msgid_plural "{count} apps went back to an older version by itself"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:264
+msgid "None of your apps tells where to find updates"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:269 src/easy_installer/gui/window.py:1096
+msgid "Updates could not be checked"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:271 src/easy_installer/gui/window.py:1138
+#, python-brace-format
+msgid "{count} update is available"
+msgid_plural "{count} updates are available"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:274
+msgid "All apps are up to date"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:276
+#, python-brace-format
+msgid "{count} app could not be checked"
+msgid_plural "{count} apps could not be checked"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:363
+msgid "Install _App…"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:367 src/easy_installer/gui/window.py:560
+msgid "Choose an AppImage file to install"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:370 src/easy_installer/gui/window.py:371
+msgid "Main Menu"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:382
+msgid "Apps will start a bit slower because a system component (FUSE) is missing."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:387
+msgid "Update A_ll"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:405 src/easy_installer/gui/window.py:407
+msgid "Check for Updates"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:420
+msgid "Check for _Updates"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:421
+msgid "_Check This Computer"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:424
+msgid "_Preferences"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:425
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:426
+msgid "_About Easy Installer"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:432
+msgid "Open AppImages with Easy Installer when you double-click them?"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:433
+msgid "_Make Default"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:438 src/easy_installer/gui/window.py:442
+msgid "Don’t Ask Again"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:454
+msgid "No apps installed yet"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:455
+msgid "Drag an AppImage file into this window, or choose one with the button below. Easy Installer puts it in a safe place and adds it to your app menu."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:458
+msgid "C_hoose AppImage…"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:468
+msgid "Search installed apps"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:472
+msgid "Installed apps"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:473
+msgid "You can also find these apps in your app menu and search."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:476
+msgid "No matching apps"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:490
+msgid "Drop to install"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:493
+msgid "Release the AppImage file to install it"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:733
+msgid "Choose an App"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:735
+msgid "Apps (AppImages and archives)"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:736
+msgid "AppImage apps"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:737
+msgid "Portable apps in archives"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:746
+msgid "All files"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:776
+#, python-brace-format
+msgid "“{name}” is not on this computer. Please download it first."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:791
+#, python-brace-format
+msgid "“{name}” will be installed after this app"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:794 src/easy_installer/gui/window.py:816
+#, python-brace-format
+msgid "{count} more app is waiting to be installed"
+msgid_plural "{count} more apps are waiting to be installed"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:860
+msgid "The folder could not be opened"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:893
+#, python-brace-format
+msgid "{name} is back in the app menu"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:894
+#, python-brace-format
+msgid "{name} was repaired"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:899
+#, python-brace-format
+msgid "{name} could not be repaired"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:917
+#, python-brace-format
+msgid "{name} is back at version {version}"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:920
+#, python-brace-format
+msgid "{name} is back at the previous version"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:925
+#, python-brace-format
+msgid "{name} could not go back to the previous version"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:940
+#, python-brace-format
+msgid "The previous version of {name} was deleted"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:945
+#, python-brace-format
+msgid "The previous version of {name} could not be deleted"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:967
+#, python-brace-format
+msgid "Please wait until Easy Installer has finished with {name}"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:993
+msgid "Open Trash"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1001
+#, python-brace-format
+msgid "{name} was already uninstalled"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1004
+#, python-brace-format
+msgid "{name} could not be uninstalled"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1033
+msgid "The trash could not be opened"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1044
+msgid "Nothing to uninstall"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1045
+msgid "This app is not installed. It may have been uninstalled already."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1053
+#, python-brace-format
+msgid "{name} cannot be uninstalled right now"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1054
+#, python-brace-format
+msgid "Easy Installer is working on {name} right now (for example, updating it). Please try again when it is finished."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1119
+msgid "Some apps could not be checked"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1173
+#, python-brace-format
+msgid "{name} is no longer installed"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1181
+#, python-brace-format
+msgid "{name} is already up to date"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1210
+#, python-brace-format
+msgid "Update {name} to version {version}?"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1212
+#, python-brace-format
+msgid "Update {name}?"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1213
+msgid "The new version is downloaded and installed."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1227
+#, python-brace-format
+msgid "{name} could not be updated"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1353
+#, python-brace-format
+msgid "{name} changed since it was installed"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1357
+#, python-brace-format
+msgid "{count} app changed and needs a repair"
+msgid_plural "{count} apps changed and need a repair"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:1425
+msgid "In_stall"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1436
+msgid "Easy Installer could not be made the default app for AppImages"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1439
+msgid "AppImages now open with Easy Installer"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1457
+msgid "The missing system component was installed"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1463
+msgid "The system component could not be installed"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1479
+#, python-brace-format
+msgid "{count} app now starts faster"
+msgid_plural "{count} apps now start faster"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:1493
+msgid "Install downloaded AppImage apps with one click. Easy Installer puts them in a safe place, adds them to your app menu and search, finds updates for them, and removes them again when you no longer need them."
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1499
+msgid "translator-credits"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1512
+msgid "This computer could not be checked"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:1564
+msgid "Please wait until Easy Installer has finished"
+msgstr ""
+
+#: src/easy_installer/helper/main.py:59
+msgid "Easy Installer's administrator helper was started in an unexpected way."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:175
+msgid "Something went wrong, so nothing was changed. Please try again."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:184
+#, python-brace-format
+msgid "Easy Installer stopped because a folder on this computer is set up in an unexpected way: {path}"
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:195
+msgid "Another installation of this app already has this special permission, so it was not changed."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:587
+#, python-brace-format
+msgid "The file {name} is only a link to another file. Please choose the file itself."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:594
+#, python-brace-format
+msgid "You are not allowed to read the file {name}."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:596
+#, python-brace-format
+msgid "The file {name} could not be read."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:612 src/easy_installer/helper/ops.py:615
+#: src/easy_installer/helper/ops.py:1967
+#, python-brace-format
+msgid "{name} is not a normal file."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:674
+msgid "The app icon could not be read."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:792 src/easy_installer/helper/ops.py:1511
+msgid "The app could not be installed because a file could not be saved."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1069
+msgid "This computer cannot give apps this special permission, because AppArmor is not available."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1073
+msgid "The special permission for the app could not be set up."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1466
+msgid "This file is too large to be installed."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1805
+msgid "The current version could not be kept, so nothing was changed."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1850 src/easy_installer/helper/ops.py:1865
+#: src/easy_installer/helper/ops.py:1917
+msgid "This app is not installed for everyone on this computer."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1964
+msgid "The special permission can only be given to apps in your home folder."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:1971
+#, python-brace-format
+msgid "The app file {name} does not belong to you."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:2037
+msgid "The missing system component cannot be installed automatically on this computer."
+msgstr ""
+
+#: src/easy_installer/helper/ops.py:2052
+msgid "The system component could not be installed. Please check your internet connection and try again."
+msgstr ""

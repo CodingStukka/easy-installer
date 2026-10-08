@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<!--
+  Polkit action for the Easy Installer helper. pkexec only matches this action when the helper is
+  started by its absolute path (see the exec.path annotation). The helper installs, updates and
+  removes apps for all users (and deletes their kept previous versions), adds sandbox permissions
+  for Electron apps and installs the FUSE library.
+-->
+<policyconfig>
+  <vendor>roothirsch</vendor>
+  <icon_name>com.roothirsch.EasyInstaller</icon_name>
+
+  <action id="com.roothirsch.EasyInstaller.manage">
+    <description>Install, update or remove apps for everyone on this computer</description>
+    <description xml:lang="de">Apps für alle auf diesem Computer installieren, aktualisieren oder entfernen</description>
+    <description xml:lang="nl">Apps installeren, bijwerken of verwijderen voor iedereen op deze computer</description>
+    <message>Easy Installer needs your password to make changes for everyone on this computer, such as installing, updating or removing an app.</message>
+    <message xml:lang="de">Easy Installer braucht dein Passwort, um Änderungen für alle auf diesem Computer vorzunehmen, zum Beispiel um eine App zu installieren, zu aktualisieren oder zu entfernen.</message>
+    <message xml:lang="nl">Easy Installer heeft je wachtwoord nodig om wijzigingen voor iedereen op deze computer te maken, zoals het installeren, bijwerken of verwijderen van een app.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/easy-installer/easy-installer-helper</annotate>
+  </action>
+</policyconfig>

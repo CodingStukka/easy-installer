@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=Easy Installer
+Name[de]=Easy Installer
+Name[nl]=Easy Installer
+GenericName=AppImage Installer
+GenericName[de]=AppImage-Installationsprogramm
+GenericName[nl]=AppImage-installatieprogramma
+Comment=Install downloaded AppImage apps with one click
+Comment[de]=Heruntergeladene AppImage-Apps mit einem Klick installieren
+Comment[nl]=Gedownloade AppImage-apps met één klik installeren
+Keywords=AppImage;install;installer;uninstall;remove;update;app;application;program;package;download;launcher;portable;
+Keywords[de]=AppImage;installieren;Installation;deinstallieren;entfernen;aktualisieren;Update;App;Anwendung;Programm;Paket;Download;Starter;portabel;
+Keywords[nl]=AppImage;installeren;installatie;verwijderen;deïnstalleren;bijwerken;update;app;toepassing;programma;pakket;download;starter;portable;
+Exec=easy-installer %F
+Icon=com.roothirsch.EasyInstaller
+Terminal=false
+StartupNotify=true
+Categories=System;PackageManager;GTK;
+MimeType=application/vnd.appimage;application/x-iso9660-appimage;application/x-appimage;
