@@ -350,12 +350,24 @@ CHILD = textwrap.dedent(r'''
         wait_until(lambda: not find_installed("openscad") and not win.is_busy, "uninstall")
         assert [r.app.id for r in win.rows] == ["org.freecad.FreeCAD", "t3code"]
 
-        # Repair: the launcher of T3 Code disappeared
+        # Repair: the launcher of T3 Code disappeared (e.g. Linux Mint's own "Uninstall" deleted
+        # it): its row and, once per session, a toast also offer to uninstall the rest
+        offered = []
+        real_toast = win.add_toast
+        win.add_toast = lambda text, **kw: (offered.append((text, kw.get("button_label")))
+                                            or real_toast(text, **kw))
         t3 = find_installed("t3code")[0]
         Path(t3.desktop_path).unlink()
         win.reload()
         row = next(r for r in win.rows if r.app.id == "t3code")
         assert row.status == "missing-launcher"
+        assert row._uninstall_button is not None
+        assert row._uninstall_button.get_label() == "Uninstall…"
+        assert row._uninstall_button.get_action_name() == "row.uninstall"
+        assert offered == [("T3 Code (Alpha) is no longer in the app menu", "Uninstall…")], offered
+        win.reload(force=True)
+        assert len(offered) == 1, offered
+        win.add_toast = real_toast
         win.repair(row.app)
         wait_until(lambda: not win.is_busy, "repair")
         assert Path(t3.desktop_path).is_file()

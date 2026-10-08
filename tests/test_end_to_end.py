@@ -628,7 +628,7 @@ def test_user_install_quotes_paths_and_adds_uninstall_action(isolated_env, downl
     assert entry.get_list("Actions") == ["easyinstaller-uninstall"]
     group = "Desktop Action easyinstaller-uninstall"
     assert split_exec(entry.get("Exec", group)) == [str(launcher), "--uninstall", app.id]
-    assert entry.get("Name[de]", group) == "Deinstallieren…"
+    assert entry.get("Name[de]", group) == "Mit Easy Installer deinstallieren…"
     assert Path(app.icon_paths[0]).parent == user_layout().icons_dir / "scalable" / "apps"
 
     assert cli.main(["easy-installer", "uninstall", "-y", app.id]) == 0

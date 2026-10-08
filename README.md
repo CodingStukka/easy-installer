@@ -54,7 +54,7 @@ instead of making you type them:
 6. **Refreshes the app menu**, so the app shows up in GNOME search and the app grid right away.
 7. **Remembers the installation** in a small registry file. That is how it can later update or
    uninstall the app. When Easy Installer itself is installed (not just run from the source
-   folder), it also adds an "Uninstall…" entry to the app's right-click menu.
+   folder), it also adds an "Uninstall with Easy Installer…" entry to the app's right-click menu.
 8. **Handles updates:** opening a newer version of an installed app replaces the old version
    instead of adding a second copy - or, if you choose **Keep both**, installs it next to it as
    a separate app ("FreeCAD 1.1.4") that stays at its version.
@@ -166,7 +166,7 @@ remove parts of the desktop.
 * **Open:** installed apps are in your app menu and search, like any other app. Easy Installer
   also lists them, with an **Open** button.
 * **Uninstall:** click the menu button next to an app in Easy Installer and choose
-  **Uninstall…**, or right-click the app in the dock or app grid and choose **Uninstall…**.
+  **Uninstall…**, or right-click the app in the dock or app grid and choose **Uninstall with Easy Installer…**.
 * **Repair:** if an app's launcher was deleted, Easy Installer offers to recreate it.
 * **Details:** click an app to see its version, size, where its updates come from, where it was
   downloaded from, its signature, the kept earlier version (**Go Back**) and its settings and
@@ -275,7 +275,7 @@ The `.deb` is the recommended way to install Easy Installer for everyone:
 
 ```sh
 make deb
-sudo apt install ./dist/easy-installer_0.2.1_all.deb
+sudo apt install ./dist/easy-installer_0.2.2_all.deb
 ```
 
 `make && sudo make install` also works (`PREFIX=/usr/local` by default, `DESTDIR` is

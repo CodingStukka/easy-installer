@@ -301,8 +301,9 @@ def test_uninstall_action_matches_catalog(lang, localedir, tmp_path):
         uninstall_command=("/usr/bin/easy-installer", "--uninstall", "demo"))
     entry = DesktopEntry.parse(render_desktop_entry(spec))
     group = "Desktop Action easyinstaller-uninstall"
-    assert entry.get("Name", group) == "Uninstall…"
-    assert entry.get(f"Name[{lang}]", group) == catalog(localedir, lang).gettext("Uninstall…")
+    assert entry.get("Name", group) == "Uninstall with Easy Installer…"
+    assert entry.get(f"Name[{lang}]", group) == catalog(localedir, lang).gettext(
+        "Uninstall with Easy Installer…")
 
 
 @pytest.mark.parametrize("lang", LANGS)

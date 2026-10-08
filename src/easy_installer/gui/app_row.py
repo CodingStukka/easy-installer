@@ -140,6 +140,15 @@ class AppRow(Adw.ActionRow):
             self._update_button.add_css_class("suggested-action")
             self.add_suffix(self._update_button)
 
+        # Its menu entry was deleted from outside (e.g. with Linux Mint's own "Uninstall", which
+        # only removes the menu entry): uninstalling the rest is offered next to "Repair".
+        self._uninstall_button: Gtk.Button | None = None
+        if self.status == STATUS_MISSING_LAUNCHER:
+            self._uninstall_button = Gtk.Button(
+                label=_("Uninstall…"), action_name="row.uninstall", valign=Gtk.Align.CENTER,
+                tooltip_text=_("Remove {name} from this computer").format(name=app.name))
+            self.add_suffix(self._uninstall_button)
+
         self._main_button = self._make_main_button()
         self.add_suffix(self._main_button)
 
@@ -227,6 +236,8 @@ class AppRow(Adw.ActionRow):
                 self._update_button.set_label(update_label(self.update))
                 self._update_button.remove_css_class("circular")
             self._main_button.set_visible(not compact)
+        if self._uninstall_button is not None:
+            self._uninstall_button.set_visible(not compact)   # (it is in the menu, too)
 
     def set_busy(self, busy: bool) -> None:
         """Show a spinner and block the buttons while something runs for this app."""
@@ -235,6 +246,8 @@ class AppRow(Adw.ActionRow):
         self._spinner.set_spinning(busy)
         self._main_button.set_sensitive(not busy)
         self._menu_button.set_sensitive(not busy)
+        if self._uninstall_button is not None:
+            self._uninstall_button.set_sensitive(not busy)
         if self._update_button is not None:
             self._update_button.set_sensitive(not busy)
 

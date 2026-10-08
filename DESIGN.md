@@ -40,7 +40,7 @@ public signature, and report the gap.
 ```
 pyproject.toml   Makefile   README.md   DESIGN.md   .gitignore
 src/easy_installer/
-  __init__.py          APP_ID, APP_NAME, __version__ = "0.2.1", GETTEXT_DOMAIN
+  __init__.py          APP_ID, APP_NAME, __version__ = "0.2.2", GETTEXT_DOMAIN
   __main__.py          entry point: CLI subcommands vs GUI
   errors.py            exception hierarchy (user-facing messages)
   i18n.py              gettext setup, `_`, `ngettext`
@@ -400,8 +400,10 @@ def mime_package_name(app_id) -> str                       # "easyinstaller-<id>
 * `Categories` default `Utility;` if missing; `Comment` default spec.comment if missing.
 * Add `X-EasyInstaller-Id=<id>`, `X-EasyInstaller-Scope=<user|system>`, `X-AppImage-Version=<version>` (if known).
 * If `uninstall_command`: append action id `easyinstaller-uninstall` to `Actions=` and add group
-  `[Desktop Action easyinstaller-uninstall]` with `Name=Uninstall…`, `Name[de]=Deinstallieren…`,
-  `Name[nl]=Verwijderen…`, `Icon=user-trash-symbolic`, `Exec=join_exec(uninstall_command)`.
+  `[Desktop Action easyinstaller-uninstall]` with `Name=Uninstall with Easy Installer…`,
+  `Name[de]=Mit Easy Installer deinstallieren…`, `Name[nl]=Verwijderen met Easy Installer…` (it says
+  who uninstalls: Linux Mint's menu shows its own "Uninstall", which only knows packages and offers
+  to delete just the menu entry), `Icon=user-trash-symbolic`, `Exec=join_exec(uninstall_command)`.
 * Output must pass `desktop-file-validate` for the sample AppImages (warnings tolerated).
 
 ## 10. `core/paths.py`

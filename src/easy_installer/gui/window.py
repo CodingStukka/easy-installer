@@ -323,6 +323,8 @@ class MainWindow(Adw.ApplicationWindow):
         #: system-wide apps that changed on disk: only "Repair" (with the password) updates them
         self._needs_repair: set[UpdateKey] = set()
         self._announced_repair: set[UpdateKey] = set()
+        # apps whose menu entry is missing that a toast already offered to uninstall
+        self._announced_missing: set[UpdateKey] = set()
         self._maintenance_running = False
         self._reconciling = False
         #: automatic update checks are on (as far as this window knows)
@@ -636,12 +638,37 @@ class MainWindow(Adw.ApplicationWindow):
         self._stack.set_visible_child_name(PAGE_LIST if apps else PAGE_EMPTY)
         self._check_stack.set_visible(bool(apps))
         self._update_updates_banner()
+        self._announce_missing_launchers(apps)
         if focused is not None:
             # The keyboard focus stays with its app (else GTK moves it to the first row).
             row = next((r for r in self._rows if app_key(r.app) == focused and r.get_visible()),
                        None)
             if row is not None:
                 row.grab_focus()
+
+    def _announce_missing_launchers(self, apps: list[InstalledApp]) -> None:
+        """An app's menu entry was deleted from outside, e.g. with Linux Mint's own "Uninstall"
+        (it only knows packages and offers to delete just the menu entry): offer to uninstall the
+        rest, once per app and session. Its row offers "Repair", too."""
+        missing = {app_key(a): a for a in apps
+                   if a.status() == STATUS_MISSING_LAUNCHER and not self.is_app_busy(a)}
+        self._announced_missing &= set(missing)   # (a repaired app is announced again later)
+        newly = [a for key, a in missing.items() if key not in self._announced_missing]
+        self._announced_missing.update(app_key(a) for a in newly)
+        if len(newly) == 1:
+            app = newly[0]
+            self.add_toast(_("{name} is no longer in the app menu").format(name=app.name),
+                           timeout=10, button_label=_("Uninstall…"),
+                           on_button=lambda: self._uninstall_by_key(app))
+        elif newly:
+            self.add_toast(ngettext("{count} app is no longer in the app menu",
+                                    "{count} apps are no longer in the app menu",
+                                    len(newly)).format(count=len(newly)), timeout=10)
+
+    def _uninstall_by_key(self, app: InstalledApp) -> None:
+        row = self._row_for(app)
+        if row is not None and not row.busy:
+            self.confirm_uninstall(row.app)
 
     def _on_row_update(self, row: AppRow) -> None:
         if row.update is not None:

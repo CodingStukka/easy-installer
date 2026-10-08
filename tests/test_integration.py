@@ -302,9 +302,9 @@ def test_t3(tmp_path):
     assert entry.get("X-EasyInstaller-Scope") == "user"
     assert entry.get("X-AppImage-Version") == "0.0.42"
     assert entry.get_list("Actions") == [UNINSTALL_ACTION]
-    assert entry.get("Name", UNINSTALL_GROUP) == "Uninstall…"
-    assert entry.get("Name[de]", UNINSTALL_GROUP) == "Deinstallieren…"
-    assert entry.get("Name[nl]", UNINSTALL_GROUP) == "Verwijderen…"
+    assert entry.get("Name", UNINSTALL_GROUP) == "Uninstall with Easy Installer…"
+    assert entry.get("Name[de]", UNINSTALL_GROUP) == "Mit Easy Installer deinstallieren…"
+    assert entry.get("Name[nl]", UNINSTALL_GROUP) == "Verwijderen met Easy Installer…"
     assert entry.get("Icon", UNINSTALL_GROUP) == "user-trash-symbolic"
     assert entry.get("Exec", UNINSTALL_GROUP) == "/usr/bin/easy-installer --uninstall t3code"
     # the embedded entry itself is untouched

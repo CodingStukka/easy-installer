@@ -17,6 +17,7 @@ from typing import Any, Callable, Iterable
 from xml.sax.saxutils import escape as xml_escape
 from xml.sax.saxutils import quoteattr
 
+from ..i18n import N_
 from .desktop_entry import INVALID_CHARS_RE, DesktopEntry, exec_program, join_exec, rewrite_exec
 from .imageinfo import ImageInfo, extension_for, hicolor_subdir
 from .paths import Layout, Scope
@@ -28,6 +29,13 @@ DESKTOP_PREFIX = "easyinstaller-"
 GENERIC_DESKTOP_STEMS = frozenset({"appimage", "apprun", "app", "default"})
 FALLBACK_ICON = "application-x-executable"
 UNINSTALL_ACTION = "easyinstaller-uninstall"
+# Says who uninstalls: Linux Mint's menu adds an "Uninstall" of its own that only knows packages.
+UNINSTALL_ACTION_NAME = N_("Uninstall with Easy Installer…")
+# The launcher carries its own translations (they must match po/, see tests/test_i18n.py).
+UNINSTALL_ACTION_NAMES = {
+    "de": "Mit Easy Installer deinstallieren…",
+    "nl": "Verwijderen met Easy Installer…",
+}
 ACTION_GROUP_PREFIX = "Desktop Action "
 EXTRACT_AND_RUN_ENV = {"APPIMAGE_EXTRACT_AND_RUN": "1"}
 
@@ -501,10 +509,9 @@ def render_desktop_entry(spec: DesktopRenderSpec) -> str:
     if spec.uninstall_command:
         group = _action_group(UNINSTALL_ACTION)
         entry.add_group(group)
-        # Fixed strings: the launcher carries its own translations.
-        entry.set("Name", "Uninstall…", group)
-        entry.set("Name[de]", "Deinstallieren…", group)
-        entry.set("Name[nl]", "Verwijderen…", group)
+        entry.set("Name", UNINSTALL_ACTION_NAME, group)
+        for lang, name in UNINSTALL_ACTION_NAMES.items():
+            entry.set(f"Name[{lang}]", name, group)
         entry.set("Icon", "user-trash-symbolic", group)
         entry.set("Exec", join_exec(spec.uninstall_command), group)
         kept.append(UNINSTALL_ACTION)

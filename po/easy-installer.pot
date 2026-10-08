@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: easy-installer 0.2.0\n"
+"Project-Id-Version: easy-installer 0.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-01 09:42+0200\n"
+"POT-Creation-Date: 2026-10-09 00:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1181,8 +1181,8 @@ msgstr ""
 msgid "It does not say where its new versions are published, so it cannot be checked for updates."
 msgstr ""
 
-#: src/easy_installer/cli.py:1876 src/easy_installer/gui/window.py:409
-#: src/easy_installer/gui/window.py:411
+#: src/easy_installer/cli.py:1876 src/easy_installer/gui/window.py:411
+#: src/easy_installer/gui/window.py:413
 msgid "Checking for updates…"
 msgstr ""
 
@@ -1638,7 +1638,7 @@ msgstr ""
 msgid "{name} could not be started."
 msgstr ""
 
-#: src/easy_installer/cli.py:2861 src/easy_installer/gui/window.py:847
+#: src/easy_installer/cli.py:2861 src/easy_installer/gui/window.py:874
 #, python-brace-format
 msgid "Starting {name}…"
 msgstr ""
@@ -2233,6 +2233,10 @@ msgstr ""
 msgid "The previous version of {name} could not be deleted."
 msgstr ""
 
+#: src/easy_installer/core/integration.py:33
+msgid "Uninstall with Easy Installer…"
+msgstr ""
+
 #: src/easy_installer/core/portable.py:275
 msgid "This file is not an app archive that Easy Installer can open."
 msgstr ""
@@ -2608,61 +2612,67 @@ msgstr ""
 msgid "Unpacked from an archive. It is not checked for updates."
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:148
+#: src/easy_installer/gui/app_row.py:148 src/easy_installer/gui/app_row.py:204
+#: src/easy_installer/gui/details_dialog.py:472
+#: src/easy_installer/gui/window.py:661
+msgid "Uninstall…"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:149
+#, python-brace-format
+msgid "Remove {name} from this computer"
+msgstr ""
+
+#: src/easy_installer/gui/app_row.py:157
 msgid "More Actions"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:151
+#: src/easy_installer/gui/app_row.py:160
 #, python-brace-format
 msgid "More actions for {name}"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:170
+#: src/easy_installer/gui/app_row.py:179
 msgid "Remove"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:170
+#: src/easy_installer/gui/app_row.py:179
 msgid "Remove it from this list"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:172 src/easy_installer/gui/app_row.py:189
+#: src/easy_installer/gui/app_row.py:181 src/easy_installer/gui/app_row.py:198
 #: src/easy_installer/gui/details_dialog.py:461
 #: src/easy_installer/gui/details_dialog.py:463
-#: src/easy_installer/gui/window.py:1354
+#: src/easy_installer/gui/window.py:1381
 msgid "Repair"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:172
+#: src/easy_installer/gui/app_row.py:181
 msgid "Add it to the app menu again"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:174 src/easy_installer/gui/app_row.py:184
+#: src/easy_installer/gui/app_row.py:183 src/easy_installer/gui/app_row.py:193
 msgid "Open"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:174
+#: src/easy_installer/gui/app_row.py:183
 #, python-brace-format
 msgid "Start {name}"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:186
+#: src/easy_installer/gui/app_row.py:195
 #: src/easy_installer/gui/details_dialog.py:387
 #: src/easy_installer/gui/details_dialog.py:598
 msgid "Show in Files"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:187 src/easy_installer/gui/window.py:1111
+#: src/easy_installer/gui/app_row.py:196 src/easy_installer/gui/window.py:1138
 msgid "Details"
 msgstr ""
 
-#: src/easy_installer/gui/app_row.py:193
+#: src/easy_installer/gui/app_row.py:202
 #: src/easy_installer/gui/details_dialog.py:472
 msgid "Remove from List…"
-msgstr ""
-
-#: src/easy_installer/gui/app_row.py:195
-#: src/easy_installer/gui/details_dialog.py:472
-msgid "Uninstall…"
 msgstr ""
 
 #: src/easy_installer/gui/application.py:37
@@ -3021,7 +3031,7 @@ msgstr ""
 #: src/easy_installer/gui/uninstall_dialog.py:296
 #: src/easy_installer/gui/update_dialog.py:284
 #: src/easy_installer/gui/update_dialog.py:313
-#: src/easy_installer/gui/window.py:1215
+#: src/easy_installer/gui/window.py:1242
 msgid "_Cancel"
 msgstr ""
 
@@ -3196,7 +3206,7 @@ msgstr ""
 #: src/easy_installer/gui/install_dialog.py:681
 #: src/easy_installer/gui/install_dialog.py:701
 #: src/easy_installer/gui/system_dialog.py:123
-#: src/easy_installer/gui/window.py:734
+#: src/easy_installer/gui/window.py:761
 msgid "_Install"
 msgstr ""
 
@@ -3212,7 +3222,7 @@ msgstr ""
 
 #: src/easy_installer/gui/install_dialog.py:462
 #: src/easy_installer/gui/update_dialog.py:357
-#: src/easy_installer/gui/window.py:723
+#: src/easy_installer/gui/window.py:750
 msgid "Technical details"
 msgstr ""
 
@@ -3223,8 +3233,8 @@ msgstr ""
 #: src/easy_installer/gui/install_dialog.py:478
 #: src/easy_installer/gui/uninstall_dialog.py:307
 #: src/easy_installer/gui/update_dialog.py:373
-#: src/easy_installer/gui/window.py:713 src/easy_installer/gui/window.py:1046
-#: src/easy_installer/gui/window.py:1056 src/easy_installer/gui/window.py:1121
+#: src/easy_installer/gui/window.py:740 src/easy_installer/gui/window.py:1073
+#: src/easy_installer/gui/window.py:1083 src/easy_installer/gui/window.py:1148
 msgid "_Close"
 msgstr ""
 
@@ -3257,7 +3267,7 @@ msgstr ""
 #: src/easy_installer/gui/install_dialog.py:688
 #: src/easy_installer/gui/update_dialog.py:286
 #: src/easy_installer/gui/update_dialog.py:436
-#: src/easy_installer/gui/window.py:1216
+#: src/easy_installer/gui/window.py:1243
 msgid "_Update"
 msgstr ""
 
@@ -3340,7 +3350,7 @@ msgstr ""
 
 #: src/easy_installer/gui/install_dialog.py:889
 #: src/easy_installer/gui/update_dialog.py:545
-#: src/easy_installer/gui/window.py:236 src/easy_installer/gui/window.py:1223
+#: src/easy_installer/gui/window.py:236 src/easy_installer/gui/window.py:1250
 #, python-brace-format
 msgid "{name} was updated"
 msgstr ""
@@ -3356,7 +3366,7 @@ msgstr ""
 
 #: src/easy_installer/gui/install_dialog.py:920
 #: src/easy_installer/gui/update_dialog.py:590
-#: src/easy_installer/gui/window.py:844
+#: src/easy_installer/gui/window.py:871
 #, python-brace-format
 msgid "{name} could not be started"
 msgstr ""
@@ -3367,7 +3377,7 @@ msgid "File: {name}"
 msgstr ""
 
 #: src/easy_installer/gui/install_dialog.py:954
-#: src/easy_installer/gui/window.py:1557
+#: src/easy_installer/gui/window.py:1584
 msgid "Please wait until the installation is finished"
 msgstr ""
 
@@ -3700,7 +3710,7 @@ msgid "{name} is still installed and works as before."
 msgstr ""
 
 #: src/easy_installer/gui/update_dialog.py:653
-#: src/easy_installer/gui/window.py:1559
+#: src/easy_installer/gui/window.py:1586
 msgid "Please wait until the update is finished"
 msgstr ""
 
@@ -3732,11 +3742,11 @@ msgstr[1] ""
 msgid "None of your apps tells where to find updates"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:269 src/easy_installer/gui/window.py:1096
+#: src/easy_installer/gui/window.py:269 src/easy_installer/gui/window.py:1123
 msgid "Updates could not be checked"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:271 src/easy_installer/gui/window.py:1138
+#: src/easy_installer/gui/window.py:271 src/easy_installer/gui/window.py:1165
 #, python-brace-format
 msgid "{count} update is available"
 msgid_plural "{count} updates are available"
@@ -3754,305 +3764,317 @@ msgid_plural "{count} apps could not be checked"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/easy_installer/gui/window.py:363
+#: src/easy_installer/gui/window.py:365
 msgid "Install _App…"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:367 src/easy_installer/gui/window.py:560
+#: src/easy_installer/gui/window.py:369 src/easy_installer/gui/window.py:562
 msgid "Choose an AppImage file to install"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:370 src/easy_installer/gui/window.py:371
+#: src/easy_installer/gui/window.py:372 src/easy_installer/gui/window.py:373
 msgid "Main Menu"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:382
+#: src/easy_installer/gui/window.py:384
 msgid "Apps will start a bit slower because a system component (FUSE) is missing."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:387
+#: src/easy_installer/gui/window.py:389
 msgid "Update A_ll"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:405 src/easy_installer/gui/window.py:407
+#: src/easy_installer/gui/window.py:407 src/easy_installer/gui/window.py:409
 msgid "Check for Updates"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:420
+#: src/easy_installer/gui/window.py:422
 msgid "Check for _Updates"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:421
+#: src/easy_installer/gui/window.py:423
 msgid "_Check This Computer"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:424
+#: src/easy_installer/gui/window.py:426
 msgid "_Preferences"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:425
+#: src/easy_installer/gui/window.py:427
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:426
+#: src/easy_installer/gui/window.py:428
 msgid "_About Easy Installer"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:432
+#: src/easy_installer/gui/window.py:434
 msgid "Open AppImages with Easy Installer when you double-click them?"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:433
+#: src/easy_installer/gui/window.py:435
 msgid "_Make Default"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:438 src/easy_installer/gui/window.py:442
+#: src/easy_installer/gui/window.py:440 src/easy_installer/gui/window.py:444
 msgid "Don’t Ask Again"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:454
+#: src/easy_installer/gui/window.py:456
 msgid "No apps installed yet"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:455
+#: src/easy_installer/gui/window.py:457
 msgid "Drag an AppImage file into this window, or choose one with the button below. Easy Installer puts it in a safe place and adds it to your app menu."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:458
+#: src/easy_installer/gui/window.py:460
 msgid "C_hoose AppImage…"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:468
+#: src/easy_installer/gui/window.py:470
 msgid "Search installed apps"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:472
+#: src/easy_installer/gui/window.py:474
 msgid "Installed apps"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:473
+#: src/easy_installer/gui/window.py:475
 msgid "You can also find these apps in your app menu and search."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:476
+#: src/easy_installer/gui/window.py:478
 msgid "No matching apps"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:490
+#: src/easy_installer/gui/window.py:492
 msgid "Drop to install"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:493
+#: src/easy_installer/gui/window.py:495
 msgid "Release the AppImage file to install it"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:733
+#: src/easy_installer/gui/window.py:660
+#, python-brace-format
+msgid "{name} is no longer in the app menu"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:664
+#, python-brace-format
+msgid "{count} app is no longer in the app menu"
+msgid_plural "{count} apps are no longer in the app menu"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/easy_installer/gui/window.py:760
 msgid "Choose an App"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:735
+#: src/easy_installer/gui/window.py:762
 msgid "Apps (AppImages and archives)"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:736
+#: src/easy_installer/gui/window.py:763
 msgid "AppImage apps"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:737
+#: src/easy_installer/gui/window.py:764
 msgid "Portable apps in archives"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:746
+#: src/easy_installer/gui/window.py:773
 msgid "All files"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:776
+#: src/easy_installer/gui/window.py:803
 #, python-brace-format
 msgid "“{name}” is not on this computer. Please download it first."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:791
+#: src/easy_installer/gui/window.py:818
 #, python-brace-format
 msgid "“{name}” will be installed after this app"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:794 src/easy_installer/gui/window.py:816
+#: src/easy_installer/gui/window.py:821 src/easy_installer/gui/window.py:843
 #, python-brace-format
 msgid "{count} more app is waiting to be installed"
 msgid_plural "{count} more apps are waiting to be installed"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/easy_installer/gui/window.py:860
+#: src/easy_installer/gui/window.py:887
 msgid "The folder could not be opened"
-msgstr ""
-
-#: src/easy_installer/gui/window.py:893
-#, python-brace-format
-msgid "{name} is back in the app menu"
-msgstr ""
-
-#: src/easy_installer/gui/window.py:894
-#, python-brace-format
-msgid "{name} was repaired"
-msgstr ""
-
-#: src/easy_installer/gui/window.py:899
-#, python-brace-format
-msgid "{name} could not be repaired"
-msgstr ""
-
-#: src/easy_installer/gui/window.py:917
-#, python-brace-format
-msgid "{name} is back at version {version}"
 msgstr ""
 
 #: src/easy_installer/gui/window.py:920
 #, python-brace-format
+msgid "{name} is back in the app menu"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:921
+#, python-brace-format
+msgid "{name} was repaired"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:926
+#, python-brace-format
+msgid "{name} could not be repaired"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:944
+#, python-brace-format
+msgid "{name} is back at version {version}"
+msgstr ""
+
+#: src/easy_installer/gui/window.py:947
+#, python-brace-format
 msgid "{name} is back at the previous version"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:925
+#: src/easy_installer/gui/window.py:952
 #, python-brace-format
 msgid "{name} could not go back to the previous version"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:940
+#: src/easy_installer/gui/window.py:967
 #, python-brace-format
 msgid "The previous version of {name} was deleted"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:945
+#: src/easy_installer/gui/window.py:972
 #, python-brace-format
 msgid "The previous version of {name} could not be deleted"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:967
+#: src/easy_installer/gui/window.py:994
 #, python-brace-format
 msgid "Please wait until Easy Installer has finished with {name}"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:993
+#: src/easy_installer/gui/window.py:1020
 msgid "Open Trash"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1001
+#: src/easy_installer/gui/window.py:1028
 #, python-brace-format
 msgid "{name} was already uninstalled"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1004
+#: src/easy_installer/gui/window.py:1031
 #, python-brace-format
 msgid "{name} could not be uninstalled"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1033
+#: src/easy_installer/gui/window.py:1060
 msgid "The trash could not be opened"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1044
+#: src/easy_installer/gui/window.py:1071
 msgid "Nothing to uninstall"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1045
+#: src/easy_installer/gui/window.py:1072
 msgid "This app is not installed. It may have been uninstalled already."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1053
+#: src/easy_installer/gui/window.py:1080
 #, python-brace-format
 msgid "{name} cannot be uninstalled right now"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1054
+#: src/easy_installer/gui/window.py:1081
 #, python-brace-format
 msgid "Easy Installer is working on {name} right now (for example, updating it). Please try again when it is finished."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1119
+#: src/easy_installer/gui/window.py:1146
 msgid "Some apps could not be checked"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1173
+#: src/easy_installer/gui/window.py:1200
 #, python-brace-format
 msgid "{name} is no longer installed"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1181
+#: src/easy_installer/gui/window.py:1208
 #, python-brace-format
 msgid "{name} is already up to date"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1210
+#: src/easy_installer/gui/window.py:1237
 #, python-brace-format
 msgid "Update {name} to version {version}?"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1212
+#: src/easy_installer/gui/window.py:1239
 #, python-brace-format
 msgid "Update {name}?"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1213
+#: src/easy_installer/gui/window.py:1240
 msgid "The new version is downloaded and installed."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1227
+#: src/easy_installer/gui/window.py:1254
 #, python-brace-format
 msgid "{name} could not be updated"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1353
+#: src/easy_installer/gui/window.py:1380
 #, python-brace-format
 msgid "{name} changed since it was installed"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1357
+#: src/easy_installer/gui/window.py:1384
 #, python-brace-format
 msgid "{count} app changed and needs a repair"
 msgid_plural "{count} apps changed and need a repair"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/easy_installer/gui/window.py:1425
+#: src/easy_installer/gui/window.py:1452
 msgid "In_stall"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1436
+#: src/easy_installer/gui/window.py:1463
 msgid "Easy Installer could not be made the default app for AppImages"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1439
+#: src/easy_installer/gui/window.py:1466
 msgid "AppImages now open with Easy Installer"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1457
+#: src/easy_installer/gui/window.py:1484
 msgid "The missing system component was installed"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1463
+#: src/easy_installer/gui/window.py:1490
 msgid "The system component could not be installed"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1479
+#: src/easy_installer/gui/window.py:1506
 #, python-brace-format
 msgid "{count} app now starts faster"
 msgid_plural "{count} apps now start faster"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/easy_installer/gui/window.py:1493
+#: src/easy_installer/gui/window.py:1520
 msgid "Install downloaded AppImage apps with one click. Easy Installer puts them in a safe place, adds them to your app menu and search, finds updates for them, and removes them again when you no longer need them."
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1499
+#: src/easy_installer/gui/window.py:1526
 msgid "translator-credits"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1512
+#: src/easy_installer/gui/window.py:1539
 msgid "This computer could not be checked"
 msgstr ""
 
-#: src/easy_installer/gui/window.py:1564
+#: src/easy_installer/gui/window.py:1591
 msgid "Please wait until Easy Installer has finished"
 msgstr ""
 
