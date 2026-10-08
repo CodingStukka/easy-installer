@@ -254,7 +254,7 @@ def test_the_whole_life_of_an_appimage(home, page):
     assert not v1_file.exists() and names(apps) == ["Demo.AppImage"]
     assert exec_args(v1) == [v1.appimage_path, "--v1.0", "%F"]
     assert v1.update_source["repo"] == "demo" and v1.data_hints == ["Demo", "demo-updater"]
-    assert v1.installer_version == __version__ == "0.2.1"
+    assert v1.installer_version == __version__ == "0.2.2"
     assert has_update_source(v1) and cached_updates() == {}
     assert [r.change for r in reconcile_all()] == ["unchanged"]
     data = app_writes_its_data(home)

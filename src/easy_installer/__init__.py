@@ -3,4 +3,4 @@
 APP_ID = "com.roothirsch.EasyInstaller"
 APP_NAME = "Easy Installer"
 GETTEXT_DOMAIN = "easy-installer"
-__version__ = "0.2.1"
+__version__ = "0.2.2"

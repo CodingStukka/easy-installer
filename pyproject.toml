@@ -1,6 +1,6 @@
 [project]
 name = "easy-installer"
-version = "0.2.1"
+version = "0.2.2"
 description = "Install AppImages like real apps: menu entry, icon, uninstall - made for people new to Linux."
 readme = "README.md"
 license = { text = "MIT" }

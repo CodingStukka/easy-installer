@@ -341,7 +341,7 @@ def test_gui_problem_without_gi(monkeypatch):
 
 def test_version(capsys):
     assert entry.main(["easy-installer", "--version"]) == 0
-    assert capsys.readouterr().out == "Easy Installer 0.2.1\n"
+    assert capsys.readouterr().out == "Easy Installer 0.2.2\n"
 
 
 def test_help(capsys):
@@ -1479,7 +1479,7 @@ def test_ask_without_stdin(monkeypatch, capsys):
 def test_subprocess_version():
     proc = run_module("--version")
     assert proc.returncode == 0
-    assert proc.stdout == "Easy Installer 0.2.1\n"
+    assert proc.stdout == "Easy Installer 0.2.2\n"
 
 
 def test_subprocess_usage_error():

@@ -134,6 +134,24 @@
   <translation type="gettext">easy-installer</translation>
 
   <releases>
+    <release version="0.2.2" date="2026-10-09">
+      <description>
+        <p>Clearer uninstalling, found while testing on Linux Mint.</p>
+        <p xml:lang="de">Klareres Deinstallieren, aufgefallen beim Testen unter Linux Mint.</p>
+        <p xml:lang="nl">Duidelijker verwijderen, ontdekt tijdens het testen op Linux Mint.</p>
+        <ul>
+          <li>The entry in an app's right-click menu is now called “Uninstall with Easy Installer…”, so it cannot be mistaken for the “Uninstall” of Linux Mint's menu</li>
+          <li xml:lang="de">Der Eintrag im Rechtsklick-Menü einer App heißt jetzt „Mit Easy Installer deinstallieren…“, damit du ihn nicht mit dem „Deinstallieren“ des Linux-Mint-Menüs verwechselst</li>
+          <li xml:lang="nl">Het item in het rechtsklikmenu van een app heet nu ‘Verwijderen met Easy Installer…’, zodat je het niet verwart met ‘Verwijderen’ in het menu van Linux Mint</li>
+          <li>When an app's menu entry was deleted elsewhere, Easy Installer offers to uninstall the rest of the app, next to Repair</li>
+          <li xml:lang="de">Wurde der Menüeintrag einer App woanders gelöscht, bietet Easy Installer neben „Reparieren“ an, den Rest der App zu deinstallieren</li>
+          <li xml:lang="nl">Is het menu-item van een app ergens anders verwijderd, dan biedt Easy Installer naast ‘Herstellen’ aan om de rest van de app te verwijderen</li>
+          <li>Easy Installer is now free software under the MIT license and has its own website</li>
+          <li xml:lang="de">Easy Installer ist jetzt freie Software unter der MIT-Lizenz und hat eine eigene Website</li>
+          <li xml:lang="nl">Easy Installer is nu vrije software onder de MIT-licentie en heeft een eigen website</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.1" date="2026-10-01">
       <description>
         <p>Fixes from a careful review of the new features.</p>
